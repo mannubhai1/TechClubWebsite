@@ -13,14 +13,23 @@ import {
 import {MdOutlineArrowDropDown} from 'react-icons/md'
 import 'react-accessible-accordion/dist/fancy-example.css';
 import wingdata from '../dsalists/accordion';
+import { IoIosMail } from 'react-icons/io'
+import { FiPhone } from 'react-icons/fi'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { FaInstagram } from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
+
 
 export default function Wingedvoyage(params) {
   const [className,setClassName] = useState(null)
+ 
      return(
         <section className='wing' id="wingedvoyage">
+          
            <div className="w_header">
              {/* left side */}
              <div className='w-left'>
+            
                 <h1 className='w-heading'>Winged Voyage</h1>
                 <br></br>
                 <motion.div className='w-start'
@@ -90,6 +99,7 @@ export default function Wingedvoyage(params) {
                     </motion.div>
              </div>
            </div>
+          
            <div className='w-content'>
              <div className='wf1img'> 
                <img src="./w_image/f1carwing.jpg" alt=""/>
@@ -138,7 +148,64 @@ export default function Wingedvoyage(params) {
  
              </div>
            </div>
+          
            <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <div className='w-flexcolumn'>
+           <div className="j-wrapper  ">
+              <div className="joins">
+            <span className=" prim">Contact Us </span>
+            <span className="sec">Contact us through mail by clicking below box
+             and ask any queries you have.
+            </span>
+            <div className="Wingfooter">
+                    
+                            <AiFillLinkedin
+                                role='button'
+                                aria-label='Linkedin'
+                                size={35}
+                                tabIndex="4"
+                                color='white'>
+                                         <a href="https://www.linkedin.com/in/automobile-club-iitt-b2382827a/"></a>
+                                </AiFillLinkedin>
+                           
+                       
+                            <FaInstagram
+                                role='button'
+                                aria-label='Instagram'
+                                size={35}
+                                tabIndex="3"
+                                color='white'>
+                                <a href=" https://www.instagram.com/automobileclub.iitt/ "></a>
+                                </FaInstagram>
+                           
+                        
+                        
+                            <FaFacebook
+                                role='button'
+                                aria-label='Discord'
+                                size={35}
+                                tabIndex="2"
+                                color='white'>
+                                        <a href=" https://www.facebook.com/profile.php?id=100093556119655 "></a>
+                                </FaFacebook>
+                           
+                        
+            </div>
+            <IoIosMail size={50} className="W-button">
+                <a href="mailto:ratnakumar48070@gmail.com">Contact us</a>
+               </IoIosMail>
+            </div>
+        
+              
+        </div>
+           
+           </div>
+           <br></br>
+        
+           
         </section>
      )
 };
