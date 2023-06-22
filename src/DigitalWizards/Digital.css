@@ -86,3 +86,15 @@
     padding:2rem;
     color: rgb(90, 88, 88);
 }
+.D-joins{
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    gap:1rem;
+   align-items: center;
+   text-align: center;
+   background: rgb(41, 40, 40);
+   border-radius: 10px;
+   min-width: 60rem;
+  
+}
