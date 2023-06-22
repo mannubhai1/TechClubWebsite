@@ -2,6 +2,11 @@ import React from 'react';
 import './Digital.css';
 import {motion} from 'framer-motion'
 import { dsaplans } from '../dsalists/dsaplans';
+import { IoIosMail } from 'react-icons/io'
+import { FiPhone } from 'react-icons/fi'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { FaInstagram } from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
 
 export default function Digital(params) {
     return(
@@ -22,8 +27,8 @@ export default function Digital(params) {
                  }}
                 >
                     <h1>
-                       Explore the<br/>
-                        Digital World
+                    Stay Dynamic <br/>
+                    and keep coding with <br/>Digital Wizards  
                     </h1>
                 </motion.div>
                 <div className='h-subtitle'>Our main objective is to improve the knowledge of
@@ -66,6 +71,62 @@ export default function Digital(params) {
                     ))
                    }
                 </div>
+           </div>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <div className='w-flexcolumn'>
+           <div className="j-wrapper  ">
+              <div className="D-joins">
+            <span className=" prim">Contact Us </span>
+            <span className="sec">Contact us through mail by clicking below box
+             and ask any queries you have.
+            </span>
+            <div className="Wingfooter">
+                    
+                            <AiFillLinkedin
+                                role='button'
+                                aria-label='Linkedin'
+                                size={35}
+                                tabIndex="4"
+                                color='white'>
+                                         <a href="https://www.linkedin.com/in/automobile-club-iitt-b2382827a/"></a>
+                                </AiFillLinkedin>
+                           
+                       
+                            <FaInstagram
+                                role='button'
+                                aria-label='Instagram'
+                                size={35}
+                                tabIndex="3"
+                                color='white'>
+                                <a href=" https://www.instagram.com/automobileclub.iitt/ "></a>
+                                </FaInstagram>
+                           
+                        
+                        
+                            <FaFacebook
+                                role='button'
+                                aria-label='Discord'
+                                size={35}
+                                tabIndex="2"
+                                color='white'>
+                                        <a href=" https://www.facebook.com/profile.php?id=100093556119655 "></a>
+                                </FaFacebook>
+                           
+                        
+            </div>
+            <IoIosMail size={50} className="W-button">
+                <a href="mailto:ratnakumar48070@gmail.com">Contact us</a>
+               </IoIosMail>
+            </div>
+        
+              
+        </div>
+           
            </div>
            <br></br>
            <br></br>
