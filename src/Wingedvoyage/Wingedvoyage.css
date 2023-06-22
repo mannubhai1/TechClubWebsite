@@ -150,6 +150,46 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
+  .prim{
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* for footer */
+  .w-flexcolumn{
+    display: flex;
+    justify-content: center;
+  }
+.Wingfooter{
+   display: flex;
+  
+   gap:2rem;
+}
+.j-wrapper{
+    padding:0rem 2rem;
+    display: flex;
+    justify-content: center;
+      
+}
+.joins{
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    gap:1rem;
+   align-items: center;
+   text-align: center;
+   background: linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%);
+   border-radius: 10px;
+   min-width: 60rem;
+  
+}
+
+.W-button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
 @media (max-width: 1024px){
    
     .w-icon{
