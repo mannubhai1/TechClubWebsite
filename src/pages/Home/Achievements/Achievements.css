@@ -1,0 +1,101 @@
+.Achievements {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem 12rem;
+  margin-top: 2rem;
+  height: 24rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(12, 22, 34, 0.7),
+    rgba(12, 22, 34, 0.7)
+  );
+}
+
+.Achievements .left-a > hr {
+  position: absolute;
+  width: 8rem;
+  border: 2.4px solid #49c5b6;
+  border-radius: 70%;
+  margin: 2.4rem 0;
+}
+
+.left-a {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 4px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.left-a > :nth-child(1) {
+  margin-bottom: 0.7rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.left-a > :nth-child(2) {
+  text-transform: none;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.right-a {
+  flex: 1.4;
+  position: relative;
+}
+
+.right-a > img {
+  position: absolute;
+  width: 18rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.right-a > img:hover {
+  box-shadow: 0 0 10px 5px white;
+  top: 1.8rem;
+}
+
+.arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+
+.arrows > img {
+  width: 1rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.arrows > img:hover {
+  box-shadow: 0 0 10px 5px white;
+  background-color: whitesmoke;
+}
+
+/* @media screen and (max-width: 800px){
+  .Achievements{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+    gap: 3rem;
+  }
+
+  .right-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+} */
