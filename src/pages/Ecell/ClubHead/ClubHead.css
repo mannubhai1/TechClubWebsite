@@ -1,0 +1,76 @@
+.ClubHead {
+  position: relative;
+  display: flex;
+  padding: 0 2rem;
+  gap: 10rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.left-c {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.left-c > hr {
+  position: absolute;
+  width: 10.5rem;
+  border: 3px solid #0f315c;
+  border-radius: 20%;
+  margin: -10px 0;
+}
+
+.left-c > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-c > div:nth-of-type(1) {
+  font-size: 2.4rem;
+}
+
+.left-c > div:nth-of-type(2) {
+  font-size: 2.3rem;
+  font-weight: 600;
+  font-style: italic;
+  -webkit-text-stroke-width: 1px;
+}
+
+.right-c {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/* ignore the css below */
+
+
+@media (max-width: 980px) {
+  .ClubHead {
+    padding: 0 1rem;
+  }
+
+  .left-c {
+    font-size: 2rem;
+  }
+
+  .left-c > hr {
+    width: 8rem;
+  }
+
+  .left-c > div:nth-of-type(1) {
+    font-size: 2.4rem;
+  }
+
+  .left-c > div:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .left-c .title {
+    font-size: 1rem;
+  }
+}

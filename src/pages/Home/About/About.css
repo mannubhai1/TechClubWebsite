@@ -1,0 +1,27 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2rem 2rem;
+  height: 100%;
+}
+
+.About > span {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.About > p {
+  color: rgba(255, 255, 255, 0.819);
+  font-size: 1.232rem;
+}
+
+.About > hr {
+  position: absolute;
+  width: 5rem;
+  border: 2.4px solid #49c5b6;
+  border-radius: 40%;
+  margin: 2.4rem 0;
+}
