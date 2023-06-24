@@ -15,6 +15,7 @@ function GaganVedhiComponents() {
   return (
     <>
       {/* Header */}
+
       <div className={styles.container1}>
         <div className={styles.header1}>
           <img
@@ -27,7 +28,12 @@ function GaganVedhiComponents() {
         </div>
       </div>
 
+      {/* Description */}
+
+      
+
       {/* About Us */}
+
       <div className={`about-col ${styles.aboutc}`}>
         <h2 className="color-black-800">ABOUT US</h2>
         <h2 className="border-b-[3px] mx-[47vw] border-yellow-200"> </h2>
@@ -58,6 +64,7 @@ function GaganVedhiComponents() {
           </div>
         </div>
         <br />
+
         {/* Description*/}
 
         <h2 className="color-black-800">Achievements and Activities</h2>
@@ -87,7 +94,7 @@ function GaganVedhiComponents() {
                   {" "}
                   Read more
                 </a>
-                <i>- Arpit loda</i>
+                <i>- Arpit</i>
               </div>
             </section>
           </div>
@@ -110,7 +117,7 @@ function GaganVedhiComponents() {
                   {" "}
                   Read more
                 </a>
-                <i>- Arpit loda</i>
+                <i>- Arpit</i>
               </div>
             </section>
           </div>
@@ -131,7 +138,7 @@ function GaganVedhiComponents() {
                   {" "}
                   Read more
                 </a>
-                <i>- Arpit loda</i>
+                <i>- Arpit</i>
               </div>
             </section>
           </div>
@@ -154,7 +161,7 @@ function GaganVedhiComponents() {
                   {" "}
                   Read more
                 </a>
-                <i>- Arpit loda</i>
+                <i>- Arpit</i>
               </div>
             </section>
           </div>
@@ -177,7 +184,7 @@ function GaganVedhiComponents() {
                   {" "}
                   Read more
                 </a>
-                <i>- Arpit loda</i>
+                <i>- Arpit</i>
               </div>
             </section>
           </div>
@@ -200,7 +207,7 @@ function GaganVedhiComponents() {
                   {" "}
                   Read more
                 </a>
-                <i>- Arpit loda</i>
+                <i>- Arpit</i>
               </div>
             </section>
           </div>
@@ -208,26 +215,50 @@ function GaganVedhiComponents() {
         <br />
 
         {/* Team */}
-        <div className="container">
-          <div className="card">
-            <div className="imgBx">
-                <div className="content">
 
-                </div>
+        <div className={styles.main}>
+          <h2 className="color-black-800 pt-10">Team</h2>
+          <h2 className="border-b-[3px] mx-[47vw] border-red-400"> </h2>
+          <div className={styles.container}>
+            <div className={styles.card}>
+              <div className={styles.imgBx}>
+                <img src="./gv_image/manasPod.jpeg" alt="manas" />
+              </div>
+              <div className={styles.content}>
+                <h2 className={styles.teamHeading1}>Manas Poddar</h2>
+                <h3 className={styles.teamHeading1}>Head</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia nostrum earum facilis quibusdam illo in?
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="imgBx">
-                <div className="content">
-                  
-                </div>
+            <div className={styles.card}>
+              <div className={styles.imgBx}>
+                <img src="./gv_image/manasPod.jpeg" alt="manas" />
+              </div>
+              <div className={styles.content}>
+                <h2 className={styles.teamHeading2}>Pranav Sutar</h2>
+                <h3 className={styles.teamHeading2}>Mentor</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus libero, aut ab praesentium sit atque.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="imgBx">
-                <div className="content">
-                  
-                </div>
+
+            <div className={styles.card}>
+              <div className={styles.imgBx}>
+                <img src="./gv_image/manasPod.jpeg" alt="manas" />
+              </div>
+              <div className={styles.content}>
+                <h2 className={styles.teamHeading3}>some person</h2>
+                <h3 className={styles.teamHeading3}>uska title</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Earum ipsum temporibus ea nostrum in modi.
+                </p>
+              </div>
             </div>
           </div>
         </div>
