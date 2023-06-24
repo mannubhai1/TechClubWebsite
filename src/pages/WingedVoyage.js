@@ -1,5 +1,5 @@
 import React from 'react'
-import Wingedvoyage from '../Wingedvoyage/Wingedvoyage'
+import Wingedvoyage from './Wingedvoyage/Wingedvoyage'
 
 const WingedVoyage = () => {
   return (
