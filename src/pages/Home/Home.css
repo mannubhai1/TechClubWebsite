@@ -1,0 +1,94 @@
+.home {
+  background-color: rgba(12, 22, 34, 255);
+}
+
+.banner {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../images/banner.jpg"); */
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerContent {
+  max-width: 88%;
+  justify-content: space-around;
+}
+
+.tagline {
+  display: flex;
+  height: 55%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.tagline .title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  padding: 4px;
+  color: #49c5b6;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.carousel {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.about .title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.about-content {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.achievements {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+.blur {
+  border-radius: 50%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.13);
+  filter: blur(80px); /* Adjust the blur radius as per your preference */
+  z-index: 10;
+}
+
+.home-blur {
+  width: 40rem;
+  height: 20rem;
+  left: 16rem;
+}
+
+@media screen and (max-width: 800px){
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+}

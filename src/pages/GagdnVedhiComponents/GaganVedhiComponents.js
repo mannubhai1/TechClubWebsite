@@ -208,9 +208,28 @@ function GaganVedhiComponents() {
         <br />
 
         {/* Team */}
-        <div className="bg-slate-950">
-          <h1 className="text-white">Team</h1>
-          <p className="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ipsam adipisci deserunt, suscipit quas ab doloremque harum distinctio, eius molestiae aliquid saepe. Repudiandae dignissimos nihil, nemo rem natus cum fugiat</p>
+        <div className="container">
+          <div className="card">
+            <div className="imgBx">
+                <div className="content">
+
+                </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="imgBx">
+                <div className="content">
+                  
+                </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="imgBx">
+                <div className="content">
+                  
+                </div>
+            </div>
+          </div>
         </div>
 
         <br />
