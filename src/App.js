@@ -4,10 +4,10 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import DigitalWizards from "./pages/DigitalWizards";
 import ECell from "./pages/ECell";
-import GaganVedhi from "./pages/GaganVedhi";
 import Techmaniacs from "./pages/Techmaniacs";
 import WingedVoyage from "./pages/WingedVoyage";
 import SigmaSquad from "./pages/SigmaSquad";
+import GaganVedhi from "./pages/GaganVedhi";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/digitalwizards" element={<DigitalWizards />} />
           <Route path="/ecell" element={<ECell />} />
-          <Route path="/gaganvedhi" element={<GaganVedhi />} />
+          <Route path="/gaganvedhi" element={< GaganVedhi/>} />
           <Route path="/sigmasquad" element={<SigmaSquad />} />
           <Route path="/techmaniacs" element={<Techmaniacs />} />
           <Route path="/wingedvoyage" element={<WingedVoyage />} />

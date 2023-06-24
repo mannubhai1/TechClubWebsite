@@ -1,0 +1,214 @@
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+                                                
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* About us */
+
+.header1{
+    background-image: url('/src/pages/GagdnVedhiComponents/gv_images/caras_pic_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;   
+    /* margin-bottom: 8vh; */
+    /* padding-bottom: 8vh; */
+    border: 2px solid gold;
+}
+.heading1{
+    color: gold;
+    /* margin-top: 2vh; */
+    padding-top: 5vh;
+    padding-left: 20vw;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;                                  
+}
+.heading2{
+    color: white;
+    /* margin-top: 2vh; */
+    padding-top: 4vh;
+    font-size: 40px;
+    padding-left: 20vw;
+    font-family: 'Raleway', sans-serif;
+                                                
+}
+
+
+.aboutcont{
+    margin-top: 6vh;
+    display: flex;
+    border: 5px;
+    justify-content: space-between;
+}
+
+
+.aboutc{
+    /* margin-top: 8vh; */
+    padding-top: 8vh;
+    background: #ff7979;
+}
+
+
+/* achievements */
+.wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.wrapper .centreLine{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+.wrapper .Row{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wrapper .Row_1{
+    justify-content: flex-start;
+}
+
+.wrapper .Row_2{
+    justify-content: flex-end;
+}
+
+.wrapper .Row section{
+    background: #fff;
+    border-radius: 5px;
+    /* width: calc(50%-40px); */
+    width: 30vw;
+    padding: 20px;
+    position: relative;
+}
+.wrapper .Row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 28px;
+    /* z-index: -1; */
+    transform: rotate(45deg);
+}
+
+.Row_1 section::before{
+    right: -7px;
+}
+
+.Row_2 section::before{
+    left: -7px;
+}
+
+.Row section .icon,
+.centreLine .scrollIcon{
+    position: absolute;
+    background: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ff7979;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+
+.centreLine .scrollIcon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.Row_1 section .icon{
+    right: -60px;
+    top: 13px;
+}
+
+.Row_1 section .icon{
+    left: -60px;
+    top: 13px;
+}
+
+.Row section .details,
+.Row section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Row section .details .Title{
+    font-size: 22px;
+    font-weight: 600;
+    /* align-items: center; */
+    margin: 10px auto;
+}
+
+.Row section p{
+    margin: 10px 0 17px 0;
+}
+
+.Row section .bottom a{
+    text-decoration: none;
+    background: #ff7979;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+@media(max-width: 790px){
+
+    .wrapper .centreLine{
+        left: 40px;
+    }
+
+    .wrapper .Row{
+        margin: 30px 0 3px 60px;
+    }
+    
+    .wrapper .Row section{
+        width: 100%;
+    }
+
+    .Row_1 section::before{
+        left: -7px;
+    }
+
+    .Row-1 section .icon{
+        left: -60px;
+    }
+}
+
+@media(max-width: 440px){
+
+    .wrapper .centreLine,
+    .Row section::before,
+    .Row section .icon{
+        display: none;
+    }
+
+    .wrapper .Row{
+        margin: 10px 0;
+    }
+
+}
