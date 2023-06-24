@@ -1,8 +1,9 @@
 import React from 'react'
+import Wingedvoyage from '../Wingedvoyage/Wingedvoyage'
 
 const WingedVoyage = () => {
   return (
-    <div>WingedVoyage</div>
+    <Wingedvoyage />
   )
 }
 

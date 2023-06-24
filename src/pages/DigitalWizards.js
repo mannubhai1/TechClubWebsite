@@ -1,8 +1,9 @@
 import React from 'react'
+import Digital from './DigitalWizards/Digital'
 
 const DigitalWizards = () => {
   return (
-    <div>DigitalWizards</div>
+    <Digital />
   )
 }
 
