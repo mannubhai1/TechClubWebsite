@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./GaganVedhiComponents.module.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function GaganVedhiComponents() {
   const email = "astronomyclub@iittp.ac.in";
