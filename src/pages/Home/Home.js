@@ -5,6 +5,7 @@ import Carousel from "./Carousel";
 import About from "./About/About";
 import ClubGrid from "./ClubGrid/ClubGrid";
 import { motion } from "framer-motion";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   const container = {
@@ -18,20 +19,17 @@ const Home = () => {
   const child = {
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         type: "spring",
-        damping: 10,
-        stiffness: 8,
+        stiffness: 30
       },
     },
     hidden: {
       opacity: 0,
-      x: 20,
+      y: 80,
       transition: {
         type: "spring",
-        damping: 10,
-        stiffness: 8,
       },
     },
   };
@@ -59,6 +57,7 @@ const Home = () => {
       <About />
       {/* <Achievements /> */}
       <ClubGrid />
+      <Footer />  
     </div>
   );
 };

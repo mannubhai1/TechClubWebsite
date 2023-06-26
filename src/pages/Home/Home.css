@@ -6,6 +6,10 @@ body {
 
 .home {
   background-color: rgba(12, 22, 34, 255);
+  /* background: linear-gradient(
+      rgb(12, 22, 34),
+      rgba(4, 24, 48, 0.995)
+    ); */
 }
 
 .banner {
@@ -85,13 +89,13 @@ body {
   position: absolute;
   background: rgba(255, 255, 255, 0.13);
   filter: blur(80px); /* Adjust the blur radius as per your preference */
-  z-index: -1;
+  z-index: 0;
 }
 
 .home-blur {
-  width: 40rem;
+  width: 44rem;
   height: 20rem;
-  left: 16rem;
+  left: 22rem;
 }
 
 @media screen and (max-width: 800px){

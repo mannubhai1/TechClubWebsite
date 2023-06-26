@@ -6,6 +6,7 @@ import ss from "../../../images/ss.png";
 import wv from "../../../images/wv.jpeg";
 import tm from "../../../images/tm.jpeg";
 import "./ClubGrid.css";
+import { motion } from "framer-motion";
 
 const ClubGrid = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -49,6 +50,43 @@ const ClubGrid = () => {
     },
   ];
 
+  const child2 = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 40,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: 20,
+      transition: {
+        type: "spring",
+        damping: 10,
+      },
+    },
+  };
+
+  const child = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 30
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: 80,
+      transition: {
+        type: "spring",
+      },
+    },
+  };
+
   const handleHover = (index) => {
     setHoveredIndex(index);
   };
@@ -59,11 +97,13 @@ const ClubGrid = () => {
 
   return (
     <div className="clubgrid">
-      <span>Discover</span>
+      <motion.span variants={child} initial="hidden" animate="visible">
+        Discover
+      </motion.span>
       {/* how to change the color of below span??  and make it big???*/}
-      <span>
+      <motion.span variants={child2} initial="hidden" animate="visible">
         the clubs that make up the backbone of our technical community
-      </span>
+      </motion.span>
       <div className="grid-container">
         {clubs.map((club, index) => (
           <div
