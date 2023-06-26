@@ -4,6 +4,8 @@
 
 h2 {
   font-size: 2rem;
+  font-weight: 510;
+  letter-spacing: 0.86px;
   text-align: center;
   color: #133868ef;
   transition: color 0.3s ease;
@@ -44,6 +46,7 @@ h3 {
 
 p {
   color: #666666;
+  font-size: 1rem;
 }
 
 .achievement:hover p {
