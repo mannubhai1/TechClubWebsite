@@ -1,13 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import styles from "./Navbar.module.css";
+// cf menu submenu
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className=" main container-fluid">
-        <img src="./iitt_logo.png" alt="iitt logo" className="navbar-logo" />
+      <div className={`${styles.main} container-fluid`}>
+        <img src="./iitt_logo.png" alt="iitt logo" className={styles.navbarLogo} />
         <div className="container">
-          <ul class="menu cf">
+          <ul className={`${styles.menu} ${styles.cf}`}>
             <li>
               <a href="/">
                 Home
@@ -17,7 +18,7 @@ const Navbar = () => {
               <a href="/">
                 Clubs
               </a>
-              <ul class="submenu">
+              <ul className={styles.submenu}>
                 <li>
                   <a href="/digitalwizards">
                     Digital Wizards
