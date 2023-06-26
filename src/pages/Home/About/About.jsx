@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="About">
       <span>About</span>
-      <hr />
+      <div className="hrdiv"/>
       <p>
         <span style={{ marginLeft: "4rem" }}>Welcome </span>to the Epicenter of
         Technological Exploration! At IIT Tirupati, we take pride in nurturing

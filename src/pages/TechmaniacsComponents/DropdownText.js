@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const DropdownText = ({ className, imgsrc, alt, text}) => {
+const DropdownText = ({ className, imgsrc, alt, text }) => {
     const [open, setOpen] = useState(false)
 
     const handleClick = () => {

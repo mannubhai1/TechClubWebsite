@@ -6,15 +6,21 @@
 }
 
 .clubgrid > span:first-child {
-  font-family: "Great Vibes";
-  -webkit-text-stroke-width: 1.23px;
-  font-size: 2.926rem;
+  color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  font-style: normal;
 }
 
 .clubgrid > span {
+  font-family: 'Montserrat', sans-serif;  
   color: white;
-  font-style: italic;
   font-size: 1.236rem;
+  font-style: italic;
 }
 
 .grid-container {
@@ -52,6 +58,7 @@
 }
 
 .overlay {
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -67,18 +74,21 @@
   opacity: 0;
   transform: translateY(100%);
   transition: 0.207s;
-  padding: 1.38rem;
+  padding: 1rem;
 }
 
 .overlay h3 {
-  margin-bottom: 0.92rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.9rem;
   font-size: 1.0824rem;
   text-transform: uppercase;
+  font-weight: bold;
   color: #00a8e8;
   text-shadow: 1.38px 1.38px 2.76px rgba(0, 0, 0, 0.8);
 }
 
 .overlay p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #fff;
   overflow: scroll;

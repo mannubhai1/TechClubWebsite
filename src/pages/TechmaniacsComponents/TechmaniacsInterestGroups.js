@@ -1,7 +1,7 @@
-import electronicspic from '../../images/tm.jpeg'
-import arduinopic from '../../images/tm.jpeg'
+import electronicspic from './Hard hat helmet.jpg'
+import arduinopic from './electricBike.jpg'
 import dronespic from './Techmaniacs_club_project_Drone_Build_2.jpg'
-import roboticspic from '../../images/tm.jpeg'
+import roboticspic from './race_car.jpg'
 import DropdownText from './DropdownText'
 
 const TechmaniacsIG = () => {

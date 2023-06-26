@@ -197,7 +197,7 @@ function GaganVedhiComponents() {
 
             <div className={`${styles.Row} ${styles.Row_1}`}>
               <section>
-                <i className={`${styles.icon} fas fa-paper-plane`}></i>
+                <i className={`${styles.icon} hover:animate-spin fas fa-paper-plane`}></i>
                 <div className={styles.details}>
                   <span className={styles.Title}>Athereum</span>
                 </div>
@@ -217,7 +217,7 @@ function GaganVedhiComponents() {
 
             <div className={`${styles.Row} ${styles.Row_2}`}>
               <section>
-                <i className={`${styles.icon} fas fa-solid fa-rocket`}></i>
+                <i className={`${styles.icon} hover:animate-spin fas fa-solid fa-rocket`}></i>
                 <div className={styles.details}>
                   <span className={styles.Title}>LIGO Workshop </span>
                 </div>
