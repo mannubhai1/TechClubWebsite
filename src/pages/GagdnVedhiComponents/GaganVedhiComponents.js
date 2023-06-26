@@ -12,9 +12,18 @@ function GaganVedhiComponents() {
 
   return (
     <>
+
+
+
+
       {/* Header */}
+
+
+
+
+
       <div className={styles.big}>
-        <div className={styles.container1}>
+        {/* <div className={styles.container1}>
           <div className={styles.header1}>
             <img
               src="./gv_image/gv.jpg"
@@ -24,9 +33,33 @@ function GaganVedhiComponents() {
             <h1 className={styles.heading1}>Gagan Vedhi</h1>
             <h2 className={styles.heading2}>IIT TIRUPATI</h2>
           </div>
+        </div> */}
+        <div class={`bg-black ${styles.starsContainer}`}>
+        <div className={styles.header1}>
+            <img
+              src="./gv_image/gv.jpg"
+              className="h-[30vh] w-[18vw] relative top-[28vh] left-40"
+              alt="logo"
+            />
+            <h1 className={styles.heading1}>Gagan Vedhi</h1>
+            <h2 className={styles.heading2}>IIT TIRUPATI</h2>
+          </div>
+          <div id={styles.stars}></div>
+          <div id={styles.stars2}></div>
+          <div id={styles.stars3}></div>
         </div>
 
+
+
+
+
         {/* Description */}
+
+
+
+
+
+
 
         <div className={styles.desc}>
           <div className={styles.box}>
@@ -50,7 +83,17 @@ function GaganVedhiComponents() {
           </div>
         </div>
 
+
+
+
+
+
         {/* About Us */}
+
+
+
+
+
 
         <div className={`about-col ${styles.aboutc}`}>
           {/* <h2 className="color-black-800">ABOUT US</h2>
@@ -89,7 +132,18 @@ function GaganVedhiComponents() {
           </div>
           <br />
 
+
+
+
+
+
           {/* Description*/}
+
+
+
+
+
+
 
           {/* <h2 className="color-black-800">Achievements and Activities</h2>
         <h2 className="border-b-[3px] mx-[44vw] border-yellow-200"> </h2> */}
@@ -101,7 +155,10 @@ function GaganVedhiComponents() {
           <br />
           <div className={styles.wrapper}>
             <div className={styles.centreLine}>
-            <a href="#" className={styles.scrollIcon}> <i className={`fas fa-caret-up`}></i></a>
+              <a href="#" className={styles.scrollIcon}>
+                {" "}
+                <i className={`fas fa-caret-up`}></i>
+              </a>
             </div>
             <div className={`${styles.Row} ${styles.Row_1}`}>
               <section>
@@ -219,7 +276,9 @@ function GaganVedhiComponents() {
 
             <div className={`${styles.Row} ${styles.Row_2}`}>
               <section>
-                <i className={`${styles.icon} fas fa-solid fa-mountain-sun`}></i>
+                <i
+                  className={`${styles.icon} fas fa-solid fa-mountain-sun`}
+                ></i>
                 <div className={styles.details}>
                   <span className={styles.Title}>Title here </span>
                   {/* <span>4st Jan 2022</span> */}
@@ -242,7 +301,17 @@ function GaganVedhiComponents() {
           </div>
           <br />
 
+
+
+
+
+
           {/* Team */}
+
+
+
+
+
 
           <div className={styles.main}>
             <div className={styles.box}>
@@ -274,8 +343,9 @@ function GaganVedhiComponents() {
                 <div className={styles.content}>
                   <h2 className={styles.teamHeading2}>Pranav Sutar</h2>
                   <h3 className={styles.teamHeading2}>Mentor</h3>
-                  <p  className="font-semibold ">
-                    4th yr Computer Science and Engineering student at IIT Tirupati.
+                  <p className="font-semibold ">
+                    4th yr Computer Science and Engineering student at IIT
+                    Tirupati.
                   </p>
                 </div>
               </div>
@@ -297,7 +367,19 @@ function GaganVedhiComponents() {
           </div>
 
           <br />
+
+
+
+
+
+
           {/* Footer */}
+
+
+
+
+
+
           <footer className="bg-black text-center text-white dark:bg-neutral-600">
             <div className="container pt-9">
               <div className="mb-9 flex justify-center">
