@@ -2,14 +2,11 @@ const SigmaSquadObj = () => {
     return (
         <div className='SSObj'>
             <h2>Objectives</h2>
-            <div className="sep2"></div>
+            <div className="sep1"></div>
             <div className="objs">
                 <ul>
                     <li>
-                        Obj1 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    </li>
-                    <li>
-                        Obj2 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Creating a culture of AI and Deep Learning Technologies among the students of IIT Tirupati.
                     </li>
                 </ul>
             </div>
