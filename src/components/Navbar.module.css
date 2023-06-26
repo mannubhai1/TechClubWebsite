@@ -1,4 +1,5 @@
 .navbarLogo {
+  z-index: 100;
   width: 7vw;
   height: 8vh;
   /* margin-right: 2vw; */
@@ -67,6 +68,7 @@
 
 /* Dropdown */
 .submenu {
+  z-index: 100;
   position: absolute;
   width: 200px;
   left: 50%;
