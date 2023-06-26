@@ -54,6 +54,7 @@
 
 .social > ul > li > a {
   color: white;
+  text-decoration: none;
 }
 
 .social > ul > li > a:hover {

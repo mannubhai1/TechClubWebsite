@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar";
 import DigitalWizards from "./pages/DigitalWizards";
-import ECell from "./pages/ECell";
+import Ecell from './pages/Ecell/Ecell'
 import Techmaniacs from "./pages/Techmaniacs";
 import WingedVoyage from "./pages/WingedVoyage";
 import SigmaSquad from "./pages/SigmaSquad";
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/digitalwizards" element={<DigitalWizards />} />
-          <Route path="/ecell" element={<ECell />} />
+          <Route path="/ecell" element={<Ecell />} />
           <Route path="/gaganvedhi" element={< GaganVedhi/>} />
           <Route path="/sigmasquad" element={<SigmaSquad />} />
           <Route path="/techmaniacs" element={<Techmaniacs />} />

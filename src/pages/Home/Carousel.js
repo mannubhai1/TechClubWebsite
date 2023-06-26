@@ -36,6 +36,7 @@ const Carousel = () => {
         alignItems: "center",
         cursor: "pointer",
         textTransform: "uppercase",
+        textDecoration:"none"
       }}
     >
       <img
