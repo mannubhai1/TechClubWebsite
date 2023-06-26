@@ -5,7 +5,7 @@ const ClubHead = () => {
   return (
     <div className="ClubHead">
       <div className="left-c">
-        <hr />
+        <div className="custom-hr1"/>
         <div className="title" >
           <span>CLUB</span>
           <span> HEAD</span>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300;400;900&display=swap');
+
 .ClubHead {
   position: relative;
   display: flex;
@@ -15,10 +17,10 @@
   position: relative;
 }
 
-.left-c > hr {
+.left-c .custom-hr1 {
   position: absolute;
-  width: 10.5rem;
-  border: 3px solid #0f315c;
+  width: 14.5rem;
+  border: 2.6px solid #2a4f7e;
   border-radius: 20%;
   margin: -10px 0;
 }
@@ -26,6 +28,10 @@
 .left-c > div {
   display: flex;
   gap: 1rem;
+}
+
+.left-c .title{
+  color: black;
 }
 
 .left-c > div:nth-of-type(1) {
@@ -58,7 +64,7 @@
     font-size: 2rem;
   }
 
-  .left-c > hr {
+  .left-c .custom-hr1{
     width: 8rem;
   }
 

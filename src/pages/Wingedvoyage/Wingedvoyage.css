@@ -1,13 +1,21 @@
 .wing{
    margin: 0;
 }
+.w-left{
+    color: whitesmoke;
+    text-align: left;
+}
+.w-starter{
+    font-size: 1rem;
+}
 .w_header{
-    background: #131110;
+    background: #0d0d0d;
     padding: 1rem;
     padding-left: 5rem;
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
+    margin-top: 0;
 }
 .w-start{
     display: flex;
@@ -17,19 +25,19 @@
 }
 .w-start>h1{
     font-weight:600;
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     line-height: 4rem;
     margin-bottom: 2rem;
 }
 
 .orange-circle{
-    height: 4rem;
-    width: 4rem;
+    height: 3.6rem;
+    width: 3.6rem;
     background:  linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
     border-radius: 999px;
     position:absolute;
     left: 6rem;
-    top:2rem;
+    top:-.7rem;
     z-index:-1;
 }
 .flex{
@@ -149,6 +157,7 @@
     color: orange;
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: left;
   }
   .prim{
     font-size: 1.7rem;
@@ -172,6 +181,7 @@
       
 }
 .joins{
+    color: white;
     display: flex;
     flex-direction: column;
     padding: 1.4rem;
@@ -186,7 +196,7 @@
 
 .W-button:hover{
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.2;
 }
 
 

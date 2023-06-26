@@ -4,6 +4,7 @@ import './Programs.css'
 import rightArrow from '../../../images/rightArrow.png'
 
 const Programs = () => {
+  
   return (
     <div className="Programs">
       <div className="programs-header">
