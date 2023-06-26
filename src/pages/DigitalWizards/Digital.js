@@ -17,7 +17,8 @@ export default function Digital(params) {
                     <img src="./dsa_image/dsalogo.jpg" alt=''/>
                    
                 </div>
-                <div>
+                
+                <div className='dw-sidehead'>
                 <motion.div className=' dsa-start'
                  initial={{y: "2rem",opacity:0}}
                  whileInView={{y:0,opacity:1}}
