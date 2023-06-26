@@ -18,7 +18,7 @@
 .left-c > hr {
   position: absolute;
   width: 10.5rem;
-  border: 3px solid #0f315c;
+  border: 3px solid #091d37;
   border-radius: 20%;
   margin: -10px 0;
 }
@@ -26,6 +26,10 @@
 .left-c > div {
   display: flex;
   gap: 1rem;
+}
+
+.left-c .title{
+  color: black;
 }
 
 .left-c > div:nth-of-type(1) {
