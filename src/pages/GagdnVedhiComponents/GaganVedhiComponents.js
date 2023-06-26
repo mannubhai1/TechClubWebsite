@@ -19,27 +19,18 @@ function GaganVedhiComponents() {
 
       
 
-      <div className={styles.big}>
-        {/* <div className={styles.container1}>
-          <div className={styles.header1}>
-            <img
-              src="./gv_image/gv.jpg"
-              className="h-[30vh] w-[18vw] relative top-[28vh] left-40"
-              alt="logo"
-            />
-            <h1 className={styles.heading1}>Gagan Vedhi</h1>
-            <h2 className={styles.heading2}>IIT TIRUPATI</h2>
-          </div>
-        </div> */}
+      <div className={`${styles.big}`}>
         <div className={`bg-black ${styles.starsContainer}`}>
           <div className={styles.header1}>
             <img
-              src="./gv_image/gv.jpg"
-              className="h-[30vh] w-[18vw] relative top-[28vh] left-40"
+              src="./gv_image/gv-removebg-preview.png"
+              className="animate-pulse h-[34vh] w-[20vw] relative rounded top-[4vh] -left-[2vw]"
               alt="logo"
             />
-            <h1 className={styles.heading1}>Gagan Vedhi</h1>
-            <h2 className={styles.heading2}>IIT TIRUPATI</h2>
+            <div className={styles.textBox}>
+              <h1 className={styles.heading1}>GAGAN VEDHI</h1>
+            </div>
+            {/* <h2 className={styles.heading2}>IIT TIRUPATI</h2> */}
           </div>
           <div id={styles.stars}></div>
           <div id={styles.stars2}></div>
@@ -57,20 +48,16 @@ function GaganVedhiComponents() {
 
         <div className={styles.desc}>
           <div className={styles.box}>
-            {/* <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
-              Gazing beyond our world with Gagan Vedhi
-            </h2> */}
             <div className={styles.titleContainer}>
               <div className={styles.titleWords}>
                 <div className={styles.title1}>
                   <h1 className={styles.title2}>
-                    {" "}
                     Gazing beyond our world with Gagan Vedhi
                   </h1>
                 </div>
               </div>
             </div>
-            <p className="italic font-semibold text-lg bold text-left w-[75vw] relative -left-72 px-8 color-white bg-white py-7 my-16">
+            <p className="italic text-black rounded-2xl font-semibold text-lg bold text-left w-[75vw] relative -left-72 px-8 color-white bg-white py-7 my-16">
               Exploring the vast expanse of the universe and uncovering its
               secrets is a thrilling experience right?, and it becomes even more
               exciting when shared with like-minded individuals. That's what
@@ -100,13 +87,6 @@ function GaganVedhiComponents() {
 
 
         <div className={`about-col ${styles.aboutc}`}>
-          {/* <h2 className="color-black-800">ABOUT US</h2>
-        <h2 className="border-b-[3px] mx-[47vw] border-yellow-200"> </h2> */}
-          {/* <div className={styles.box}>
-            <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
-              About Us
-            </h2>
-          </div> */}
           <div className={styles.titleContainer}>
             <div className={styles.titleWords}>
               <div className={styles.title1}>
@@ -115,9 +95,9 @@ function GaganVedhiComponents() {
             </div>
           </div>
           <div className={styles.aboutcont}>
-            <div className="col-md-5 m-5 border-2 border-cyan-500 bg-white">
+            <div className="col-md-5 m-5 rounded-3xl border-2 border-cyan-500 bg-white">
               <h2 className="color-white font-bold py-3">History</h2>
-              <p className="italic font-semibold text-lg bold text-left px-3 color-white">
+              <p className=" text-black italic font-semibold text-lg bold text-left px-3 color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
                 club was founded 6 years ago by Anup Kulkarni with the name
@@ -131,9 +111,9 @@ function GaganVedhiComponents() {
                 continues unwaveringly.{" "}
               </p>
             </div>
-            <div className="col-md-5 m-5 border-2 border-cyan-500 bg-white">
+            <div className="col-md-5 m-5 rounded-3xl border-2 border-cyan-500 bg-white">
               <h2 className="color-yellow font-bold py-3">Motivation</h2>
-              <p className=" text-left font-bold italic px-3 md:text-xl">
+              <p className="text-black text-left font-bold italic px-3 md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
                 The Club Aims to establish a strong community of Astrophiles to
@@ -152,14 +132,6 @@ function GaganVedhiComponents() {
 
 
 
-          {/* <h2 className="color-black-800">Achievements and Activities</h2>
-        <h2 className="border-b-[3px] mx-[44vw] border-yellow-200"> </h2> */}
-          {/* <div className={styles.box}>
-            <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
-              Achievements and Activities
-            </h2>
-          </div> */}
-
           <div className={styles.titleContainer}>
             <div className={styles.titleWords}>
               <div className={styles.title1}>
@@ -175,7 +147,7 @@ function GaganVedhiComponents() {
             <div className={styles.centreLine}>
               <a href="#" className={styles.scrollIcon}>
                 {" "}
-                <i className={`fas fa-caret-up`}></i>
+                <i className={` animate-bounce fas fa-caret-up`}></i>
               </a>
             </div>
             <div className={`${styles.Row} ${styles.Row_1}`}>
@@ -203,7 +175,7 @@ function GaganVedhiComponents() {
 
             <div className={`${styles.Row} ${styles.Row_2}`}>
               <section>
-                <i className={`${styles.icon} fas fa-star`}></i>
+                <i className={`${styles.icon} hover:animate-spin fas fa-star`}></i>
 
                 <div className={styles.details}>
                   <span className={styles.Title}>
@@ -493,12 +465,12 @@ function GaganVedhiComponents() {
 
 
             <div className="bg-black p-4 text-center text-neutral-8 00 dark:bg-neutral-700 dark:text-neutral-200">
-              © 2023 Copyright:
+              © 2023 Copyright: 
               <a
                 className="text-neutral-600 dark:text-neutral-400"
-                href="https://tailwind-elements.com/"
+                href="https://www.iittp.ac.in/"
               >
-                Gagan Vedhi
+                <span>  Gagan Vedhi </span>
               </a>
             </div>
           </footer>
