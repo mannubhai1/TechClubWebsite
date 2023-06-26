@@ -23,7 +23,6 @@ html{
 /* Description */
 
 .desc{
-    /* background: #ff7979; */
     padding: 10vh auto;
     height: 50vh;  
 }
@@ -32,8 +31,63 @@ html{
 
 .container1{
     height: 93vh;
-    /* margin-bottom: 3vh; */
 }
+
+/* experiment */
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:5vh;
+    margin: 10vh auto;
+    height: 20vh;
+    width: 30vw;
+    padding-bottom: 1vh;
+
+}
+
+
+h1.title2 {
+    font-size: 2vw;
+    font-family:Segoe UI, "Rockwell Extra Bold";
+    letter-spacing: 3px;
+    background-image: url("https://i.pinimg.com/originals/fc/fa/4b/fcfa4b5d2b15848c101ce15db59a2c4f.gif");
+    background-position-y: 74%;
+    background-position-x: 80%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    background-repeat: repeat;
+    font-weight: 800;
+    display: flex;
+    flex-shrink: inherit;
+    text-transform: uppercase;
+}
+
+.title1 {
+    width: 92%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center; 
+    background-image: linear-gradient(0deg, #000000 0%, #080808 50%, #000000 100%);
+    background-color: #000000;
+}
+/* the image that appears in the background of block */
+.titleWords{
+    border: 6px solid rgb(7, 7, 7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://i.pinimg.com/originals/fc/fa/4b/fcfa4b5d2b15848c101ce15db59a2c4f.gif");
+    background-size: cover;
+    background-position-y: 75%;
+}
+
+/* experiment ends */
+
 
 .header1{
     background-image: url('/src/pages/GagdnVedhiComponents/gv_images/caras_pic_1.jpg');
@@ -236,7 +290,12 @@ html{
 }
 
 
+
+
 /* Team */
+
+
+
 
 .main{
 
@@ -330,7 +389,7 @@ html{
     width: 350px;
     margin-left: 6vw;
     margin-right: 6vw;
-    height: 320px;
+    height: 340px;
     background: #fff;
     border-radius: 20px;
     /* box-shadow: 0 35px 80px rgba(0,0,0,0.15);  */
@@ -345,15 +404,15 @@ html{
 .container .card .imgBx{
     position: absolute;
     width: 300px;
-    top: 20px;
-    height: 220px;
+    top: 15px;
+    height: 270px;
     background: #333;
     border-radius: 12px;
     transition: 0.5s;
 }
 
 .container .card:hover .imgBx{
-    top: -100px;
+    top: -120px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0,0,0,0.2);
 }
@@ -370,7 +429,7 @@ html{
 
 .container .card .content{
     position: absolute;
-    top: 252px;
+    top: 290px;
     width: 100%;
     height: 35px;
     overflow: hidden;
@@ -380,7 +439,7 @@ html{
 }
 
 .container .card:hover .content{
-    top: 130px;
+    top: 140px;
     height: 250px;
 }
 
@@ -407,10 +466,15 @@ html{
 }
 
 
+
+
 /* starting image */
+
+
 
 .stars-container {
 	position: absolute;
+    /* bottom: 0; */
 	height: 100%;
 	width: 100vw;
 	z-index: -1;

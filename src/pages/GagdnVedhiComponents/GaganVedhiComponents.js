@@ -4,23 +4,20 @@ import styles from "./GaganVedhiComponents.module.css";
 
 function GaganVedhiComponents() {
   const email = "astronomyclub@iittp.ac.in";
-  const discord = "";
+  const discord = "https://discord.com/invite/7nqZBQX9";
   const linkedin = "https://www.linkedin.com/in/gagan-vedhi-iitt-129314244/";
   const instagram = "https://www.instagram.com/astroclubiitt/";
-  const github = "";
-  const facebook = "";
+  const github = "https://github.com/astroclubiitt";
+  const facebook = "https://www.facebook.com/Gagan-Vedhi-114387885028659/?ref=page_internal";
 
   return (
     <>
 
 
-
-
       {/* Header */}
 
 
-
-
+      
 
       <div className={styles.big}>
         {/* <div className={styles.container1}>
@@ -34,8 +31,8 @@ function GaganVedhiComponents() {
             <h2 className={styles.heading2}>IIT TIRUPATI</h2>
           </div>
         </div> */}
-        <div class={`bg-black ${styles.starsContainer}`}>
-        <div className={styles.header1}>
+        <div className={`bg-black ${styles.starsContainer}`}>
+          <div className={styles.header1}>
             <img
               src="./gv_image/gv.jpg"
               className="h-[30vh] w-[18vw] relative top-[28vh] left-40"
@@ -58,14 +55,21 @@ function GaganVedhiComponents() {
 
 
 
-
-
-
         <div className={styles.desc}>
           <div className={styles.box}>
-            <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
+            {/* <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
               Gazing beyond our world with Gagan Vedhi
-            </h2>
+            </h2> */}
+            <div className={styles.titleContainer}>
+              <div className={styles.titleWords}>
+                <div className={styles.title1}>
+                  <h1 className={styles.title2}>
+                    {" "}
+                    Gazing beyond our world with Gagan Vedhi
+                  </h1>
+                </div>
+              </div>
+            </div>
             <p className="italic font-semibold text-lg bold text-left w-[75vw] relative -left-72 px-8 color-white bg-white py-7 my-16">
               Exploring the vast expanse of the universe and uncovering its
               secrets is a thrilling experience right?, and it becomes even more
@@ -82,14 +86,14 @@ function GaganVedhiComponents() {
             </p>
           </div>
         </div>
+        <br />
+        <br />
 
 
 
-
-
+        
 
         {/* About Us */}
-
 
 
 
@@ -98,15 +102,22 @@ function GaganVedhiComponents() {
         <div className={`about-col ${styles.aboutc}`}>
           {/* <h2 className="color-black-800">ABOUT US</h2>
         <h2 className="border-b-[3px] mx-[47vw] border-yellow-200"> </h2> */}
-          <div className={styles.box}>
+          {/* <div className={styles.box}>
             <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
               About Us
             </h2>
+          </div> */}
+          <div className={styles.titleContainer}>
+            <div className={styles.titleWords}>
+              <div className={styles.title1}>
+                <h1 className={styles.title2}>About us</h1>
+              </div>
+            </div>
           </div>
           <div className={styles.aboutcont}>
             <div className="col-md-5 m-5 border-2 border-cyan-500 bg-white">
-              <h2 className="color-white py-3">History</h2>
-              <p className="italic font-semi text-lg bold text-left px-3 color-white">
+              <h2 className="color-white font-bold py-3">History</h2>
+              <p className="italic font-semibold text-lg bold text-left px-3 color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
                 club was founded 6 years ago by Anup Kulkarni with the name
@@ -120,9 +131,9 @@ function GaganVedhiComponents() {
                 continues unwaveringly.{" "}
               </p>
             </div>
-            <div className="col-md-4 m-5 border-2 border-cyan-500 bg-white">
-              <h2 className="color-yellow py-3">Motivation</h2>
-              <p className=" text-left italic px-3 md:text-xl">
+            <div className="col-md-5 m-5 border-2 border-cyan-500 bg-white">
+              <h2 className="color-yellow font-bold py-3">Motivation</h2>
+              <p className=" text-left font-bold italic px-3 md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
                 The Club Aims to establish a strong community of Astrophiles to
@@ -136,21 +147,28 @@ function GaganVedhiComponents() {
 
 
 
-
           {/* Description*/}
-
-
-
 
 
 
 
           {/* <h2 className="color-black-800">Achievements and Activities</h2>
         <h2 className="border-b-[3px] mx-[44vw] border-yellow-200"> </h2> */}
-          <div className={styles.box}>
+          {/* <div className={styles.box}>
             <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
               Achievements and Activities
             </h2>
+          </div> */}
+
+          <div className={styles.titleContainer}>
+            <div className={styles.titleWords}>
+              <div className={styles.title1}>
+                <h1 className={styles.title2}>
+                  {" "}
+                  Achievements and Activities
+                </h1>
+              </div>
+            </div>
           </div>
           <br />
           <div className={styles.wrapper}>
@@ -167,7 +185,6 @@ function GaganVedhiComponents() {
                   <span className={styles.Title}>
                     Shaastra- Cosmic Innovation Challenge{" "}
                   </span>
-                  {/* <span>1st Jan 2022</span> */}
                 </div>
                 <p>
                   Second Prize by Team of Arpit and Manas among 163
@@ -192,7 +209,6 @@ function GaganVedhiComponents() {
                   <span className={styles.Title}>
                     Regional Science Centre Trip{" "}
                   </span>
-                  {/* <span>2st Jan 2022</span> */}
                 </div>
                 <p>
                   A three-hour trip to RSC of Tirupati for a sky-gazing session
@@ -212,7 +228,6 @@ function GaganVedhiComponents() {
                 <i className={`${styles.icon} fas fa-paper-plane`}></i>
                 <div className={styles.details}>
                   <span className={styles.Title}>Athereum</span>
-                  {/* <span>3st Jan 2022</span> */}
                 </div>
                 <p>
                   A Joint fest organized by Astronomy Clubs of IIT and IISER
@@ -233,7 +248,6 @@ function GaganVedhiComponents() {
                 <i className={`${styles.icon} fas fa-solid fa-rocket`}></i>
                 <div className={styles.details}>
                   <span className={styles.Title}>LIGO Workshop </span>
-                  {/* <span>4st Jan 2022</span> */}
                 </div>
                 <p>
                   A two-day Offline workshop on Gravitational Waves Detection by
@@ -251,12 +265,11 @@ function GaganVedhiComponents() {
               </section>
             </div>
 
-            <div className={`${styles.Row} ${styles.Row_1}`}>
+            {/* <div className={`${styles.Row} ${styles.Row_1}`}>
               <section>
                 <i className={`${styles.icon} fas fa-map-marker-alt`}></i>
                 <div className={styles.details}>
                   <span className={styles.Title}> Title here </span>
-                  {/* <span>4st Jan 2022</span> */}
                 </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -281,7 +294,6 @@ function GaganVedhiComponents() {
                 ></i>
                 <div className={styles.details}>
                   <span className={styles.Title}>Title here </span>
-                  {/* <span>4st Jan 2022</span> */}
                 </div>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -297,10 +309,9 @@ function GaganVedhiComponents() {
                   <i>- GaganVedhi</i>
                 </div>
               </section>
-            </div>
+            </div> */}
           </div>
           <br />
-
 
 
 
@@ -311,13 +322,21 @@ function GaganVedhiComponents() {
 
 
 
-
-
           <div className={styles.main}>
-            <div className={styles.box}>
+            {/* <div className={styles.box}>
               <h2 className={`${styles.ribbon} ${styles.redGradient}`}>
                 CLUB HEADS
               </h2>
+            </div> */}
+            <div className={styles.titleContainer}>
+              <div className={styles.titleWords}>
+                <div className={styles.title1}>
+                  <h1 className={styles.title2}>
+                    {" "}
+                    Club heads
+                  </h1>
+                </div>
+              </div>
             </div>
             {/* <h3>Background gradient</h3> */}
             {/* <h2 className="border-b-[3px] mx-[47vw] border-yellow-400"> </h2> */}
@@ -326,7 +345,7 @@ function GaganVedhiComponents() {
             <div className={styles.container}>
               <div className={styles.card}>
                 <div className={styles.imgBx}>
-                  <img src="./gv_image/manasPod.jpeg" alt="Manas Poddar" />
+                  <img src="./gv_image/manas1.jpg" alt="Manas Poddar" />
                 </div>
                 <div className={styles.content}>
                   <h2 className={styles.teamHeading1}>Manas Poddar</h2>
@@ -338,7 +357,7 @@ function GaganVedhiComponents() {
               </div>
               <div className={styles.card}>
                 <div className={styles.imgBx}>
-                  <img src="#" alt="Pranav Sutar" />
+                  <img src="./gv_image/pranav.jpg" alt="Pranav Sutar" />
                 </div>
                 <div className={styles.content}>
                   <h2 className={styles.teamHeading2}>Pranav Sutar</h2>
@@ -371,25 +390,22 @@ function GaganVedhiComponents() {
 
 
 
-
-
           {/* Footer */}
 
 
 
 
 
-
-          <footer className="bg-black text-center text-white dark:bg-neutral-600">
+          <footer className="bg-slate-950 text-center text-white dark:bg-neutral-300">
             <div className="container pt-9">
               <div className="mb-9 flex justify-center">
                 <a
                   href={facebook}
-                  className="mr-10 text-neutral-800 dark:text-neutral-200"
+                  className="mr-10 text-neutral-800 dark:text-neutral rounded border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-6 w-6 hover:fill-black"
                     fill="white"
                     viewBox="0 0 24 24"
                   >
@@ -398,14 +414,14 @@ function GaganVedhiComponents() {
                 </a>
                 <a
                   href={discord}
-                  className="mr-10 text-neutral-800 dark:text-neutral-200"
+                  className="mr-10 text-neutral-800 dark:text-neutral-200 rounded border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
                     height="23"
                     fill="white"
-                    className="bi bi-discord"
+                    className="bi bi-discord hover:fill-black"
                     viewBox="0 0 16 16"
                   >
                     <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
@@ -413,11 +429,11 @@ function GaganVedhiComponents() {
                 </a>
                 <a
                   href={email}
-                  className="mr-10 text-neutral-800 dark:text-neutral-200"
+                  className="mr-10 text-neutral-800 dark:text-neutral-200 rounded border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-6 w-6 hover:fill-black"
                     fill="white"
                     viewBox="0 0 24 24"
                   >
@@ -430,11 +446,11 @@ function GaganVedhiComponents() {
                 </a>
                 <a
                   href={instagram}
-                  className="mr-10 text-neutral-800 dark:text-neutral-200"
+                  className="mr-10 text-neutral-800 dark:text-neutral-200 rounded border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-6 w-6 hover:fill-black"
                     fill="white"
                     viewBox="0 0 24 24"
                   >
@@ -443,11 +459,11 @@ function GaganVedhiComponents() {
                 </a>
                 <a
                   href={linkedin}
-                  className="mr-10 text-neutral-800 dark:text-neutral-200"
+                  className="mr-10 text-neutral-800 dark:text-neutral-200 rounded border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-6 w-6 hover:fill-black"
                     fill="white"
                     viewBox="0 0 24 24"
                   >
@@ -456,11 +472,11 @@ function GaganVedhiComponents() {
                 </a>
                 <a
                   href={github}
-                  className="text-neutral-800 dark:text-neutral-200"
+                  className="text-neutral-800 dark:text-neutral-200 rounded border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-6 w-6 hover:fill-black"
                     fill="white"
                     viewBox="0 0 24 24"
                   >
@@ -470,8 +486,13 @@ function GaganVedhiComponents() {
               </div>
             </div>
 
+
+
             {/* <!--Copyright section--> */}
-            <div className="bg-black p-4 text-center text-neutral-600 dark:bg-neutral-700 dark:text-neutral-200">
+
+
+
+            <div className="bg-black p-4 text-center text-neutral-8 00 dark:bg-neutral-700 dark:text-neutral-200">
               © 2023 Copyright:
               <a
                 className="text-neutral-600 dark:text-neutral-400"
