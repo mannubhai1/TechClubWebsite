@@ -77,13 +77,14 @@
   position: absolute;
   background: rgba(255, 255, 255, 0.13);
   filter: blur(80px); /* Adjust the blur radius as per your preference */
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .home-blur {
-  width: 40rem;
+  width: 100vw;
   height: 20rem;
-  left: 16rem;
+  /* left: 16rem; */
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 800px){
