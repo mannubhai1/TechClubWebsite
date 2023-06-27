@@ -8,13 +8,14 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 2rem 2rem;
+  padding: 5rem 2.2rem;
   height: 100%;
 }
 
 .About > span {
   font-weight: bold;
   font-size: 2rem;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
   margin-bottom: 1.4rem;
 }

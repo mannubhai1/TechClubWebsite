@@ -50,42 +50,7 @@ const ClubGrid = () => {
     },
   ];
 
-  const child2 = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 40,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      y: 20,
-      transition: {
-        type: "spring",
-        damping: 10,
-      },
-    },
-  };
-
-  const child = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 30
-      },
-    },
-    hidden: {
-      opacity: 0,
-      y: 80,
-      transition: {
-        type: "spring",
-      },
-    },
-  };
+  
 
   const handleHover = (index) => {
     setHoveredIndex(index);
@@ -97,11 +62,25 @@ const ClubGrid = () => {
 
   return (
     <div className="clubgrid">
-      <motion.span variants={child} initial="hidden" animate="visible">
+      <motion.span 
+      initial={{y: "2rem",opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{
+          duration: 2,
+          type: "spring"
+      }}
+      >
         Discover
       </motion.span>
       {/* how to change the color of below span??  and make it big???*/}
-      <motion.span variants={child2} initial="hidden" animate="visible">
+      <motion.span 
+      initial={{y: "2rem",opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{
+          duration: 2,
+          type: "spring"
+      }}
+      >
         the clubs that make up the backbone of our technical community
       </motion.span>
       <div className="grid-container">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Achievements.css";
+import {motion} from 'framer-motion'
 
 const Achievements = () => {
   const achievements = [
@@ -17,7 +18,14 @@ const Achievements = () => {
 
   return (
     <div className="achievements">
-      <h2>Achievements</h2>
+      <motion.h2
+      initial={{y: "-3rem",opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{
+          duration: 3,
+          type: "spring"
+      }}
+      >Achievements</motion.h2>
       <div className="achievement-grid">
         {achievements.map((achievement, index) => (
           <div className="achievement" key={index}>

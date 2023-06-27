@@ -6,6 +6,7 @@ import e4 from "../Photos/e4.jpg";
 import e5 from "../Photos/e5.jpg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import {motion} from 'framer-motion'
 
 const Slider = () => {
   const [images, setImages] = useState([]);
@@ -65,7 +66,13 @@ const Slider = () => {
         background: 'linear-gradient(to bottom, #273c75, #1a2855)'
       }}
     >
-      <span
+      <motion.span
+      initial={{x: "-2.4rem",opacity:0}}
+      whileInView={{x:0,opacity:1}}
+      transition={{
+          duration: 2,
+          type: "spring"
+      }}
         className="stroke-text2"
         style={{
           fontWeight: "bold",
@@ -75,8 +82,14 @@ const Slider = () => {
         }}
       >
         Past
-      </span>
-      <span
+      </motion.span>
+      <motion.span
+      initial={{x: "-3rem",opacity:0}}
+      whileInView={{x:0,opacity:1}}
+      transition={{
+          duration: 2,
+          type: "spring"
+      }}
       className="stroke-text2"
         style={{
           fontWeight: "bold",
@@ -87,7 +100,7 @@ const Slider = () => {
         }}
       >
         Events
-      </span>
+      </motion.span>
       <AliceCarousel
         mouseTracking
         infinite
