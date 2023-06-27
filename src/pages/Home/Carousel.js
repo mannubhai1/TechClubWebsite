@@ -42,7 +42,8 @@ const Carousel = () => {
       <img
         src={club[0]}
         alt="club-name"
-        height="80"
+        // height="20"
+        className="h-[13vh]"
         style={{ borderRadius: "50%", objectFit: "cover" }}
       />
 
