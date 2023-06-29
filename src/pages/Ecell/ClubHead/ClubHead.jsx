@@ -34,8 +34,8 @@ const ClubHead = () => {
         >
           <motion.span
             style={{ fontWeight: 300 }}
-            initial={{ y: "2rem", opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ x: "2rem", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               duration: 2,
               type: "spring",
@@ -45,8 +45,6 @@ const ClubHead = () => {
           </motion.span>
         </span>
       </div>
-
-      <div className="right-c"></div>
     </div>
   );
 };

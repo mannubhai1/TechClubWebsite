@@ -75,7 +75,7 @@ const ClubGrid = () => {
       {/* how to change the color of below span??  and make it big???*/}
       <motion.span 
       initial={{y: "2rem",opacity:0}}
-      whileInView={{y:0,opacity:1}}
+      whileInView ={{y:0,opacity:1}}
       transition={{
           duration: 2,
           type: "spring"

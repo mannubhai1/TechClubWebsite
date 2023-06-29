@@ -1,9 +1,17 @@
 import React from "react";
 import "./About.css";
+import {motion} from 'framer-motion'
 
 const About = () => {
   return (
-    <div className="About">
+    <motion.div className="About"
+    initial={{x: "0rem",opacity:0}}
+    whileInView ={{x:0,opacity:1}}
+    transition={{
+        duration: 3,
+        type: "spring"
+    }}
+    >
       <span>About</span>
       <div className="hrdiv"/>
       <p>
@@ -19,7 +27,7 @@ const About = () => {
         collaborate, learn, and grow together. Whether you're a beginner or an
         expert, our clubs offer something for everyone.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

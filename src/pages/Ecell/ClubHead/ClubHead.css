@@ -79,4 +79,8 @@
   .left-c .title {
     font-size: 1rem;
   }
+
+  .left-c .title>span{
+    font-size: 1.8rem;
+  }
 }

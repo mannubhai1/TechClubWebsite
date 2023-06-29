@@ -2,6 +2,7 @@ import React from "react";
 import { programsData } from "./programsData";
 import './Programs.css'
 import rightArrow from '../../../images/rightArrow.png'
+import {motion} from 'framer-motion'
 
 const Programs = () => {
   
@@ -9,9 +10,30 @@ const Programs = () => {
     <div className="Programs">
       <div className="programs-header">
         <h3 className="mobile-header">Programs</h3>
-        <span className="stroke-text">Explore </span>
-        <span>Empower</span>
-        <span className="stroke-text"> succeed</span>
+        <motion.span className="stroke-text"
+        initial={{ x: "-2rem", opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        >Explore </motion.span>
+        <motion.span
+        initial={{ y: "-2rem", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        >Empower</motion.span>
+        <motion.span className="stroke-text"
+        initial={{ x: "2rem", opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          duration: 2,
+          type: "spring",
+        }}
+        > succeed</motion.span>
       </div>
 
       <div className="program-categories">

@@ -69,8 +69,12 @@
   }
 
   .AiFillLinkedin:hover,
-  .FaInstagram:hover,
   .AiOutlineMail:hover {
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 1));
   }
   
+  .head:hover{
+    filter: drop-shadow(0 0 0.1px rgba(255, 255, 255, 1));
+    cursor: default;
+
+  }

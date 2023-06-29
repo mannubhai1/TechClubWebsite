@@ -19,10 +19,10 @@ const Achievements = () => {
   return (
     <div className="achievements">
       <motion.h2
-      initial={{y: "-3rem",opacity:0}}
+      initial={{y: "-2rem",opacity:0}}
       whileInView={{y:0,opacity:1}}
       transition={{
-          duration: 3,
+          duration: 2,
           type: "spring"
       }}
       >Achievements</motion.h2>
