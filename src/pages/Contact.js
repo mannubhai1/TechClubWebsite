@@ -35,7 +35,7 @@ const Contact = () => {
             discord: "https://discord.gg/PgxHkAny",
             linkedin: "https://www.linkedin.com/company/digitalwizards1/",
             instagram: "https://instagram.com/digitalwizardiittp?igshid=MzRlODBiNWFlZA==",
-            color: "lightyellow"
+            color: "rgb(222, 235, 106)"
         },
         {
             clubName: "Gagan Vedhi",
