@@ -1,0 +1,89 @@
+.tech-sec-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.tech-aff-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcoral;
+    border: solid 1px black;
+    border-radius: 25px;
+    width: 66vw;
+    margin-bottom: 2vh;
+}
+
+.tech-aff-details h3 {
+    padding-top: 2vh;
+}
+
+.tech-sec-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.club-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 25px;
+    width: 66vw;
+    margin-bottom: 2vh;
+}
+
+.club-details h3{
+    padding-top: 2vh;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22vw;
+}
+
+.email-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22vw;
+}
+
+.socialMedia-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 22vw;
+}
+
+.accounts-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2vh;
+}

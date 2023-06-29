@@ -8,6 +8,7 @@ import Techmaniacs from "./pages/Techmaniacs";
 import WingedVoyage from "./pages/WingedVoyage";
 import SigmaSquad from "./pages/SigmaSquad";
 import GaganVedhi from "./pages/GaganVedhi";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/sigmasquad" element={<SigmaSquad />} />
           <Route path="/techmaniacs" element={<Techmaniacs />} />
           <Route path="/wingedvoyage" element={<WingedVoyage />} />
+          <Route path="/contact-us" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

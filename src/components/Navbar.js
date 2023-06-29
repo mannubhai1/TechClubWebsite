@@ -62,7 +62,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="/contact-us">
                 Contact us
               </a>
             </li>
