@@ -94,7 +94,8 @@ export default function Digital(params) {
                                 size={35}
                                 tabIndex="4"
                                 color='white'>
-                                         <a href="https://www.linkedin.com/in/automobile-club-iitt-b2382827a/"></a>
+                                         <a href="https://www.linkedin.com/company/digitalwizards1/
+"></a>
                                 </AiFillLinkedin>
                            
                        
@@ -104,7 +105,8 @@ export default function Digital(params) {
                                 size={35}
                                 tabIndex="3"
                                 color='white'>
-                                <a href=" https://www.instagram.com/automobileclub.iitt/ "></a>
+                                <a href=" https://www.instagram.com/@digitalwiziardsiittp
+/ "></a>
                                 </FaInstagram>
                            
                         
@@ -121,7 +123,7 @@ export default function Digital(params) {
                         
             </div>
             <IoIosMail size={50} className="W-button">
-                <a href="mailto:ratnakumar48070@gmail.com">Contact us</a>
+                <a href="mailto:codeclub@iittp.ac.in">Contact us</a>
                </IoIosMail>
             </div>
         
