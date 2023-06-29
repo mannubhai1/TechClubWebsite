@@ -82,7 +82,7 @@ const Carousel = () => {
       className="carousel-style"
       style={{
         height: "70%",
-        display: "flex",
+        display: "flex",  
         marginTop: '1rem',
         alignItems: "center",
       }}

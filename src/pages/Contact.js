@@ -43,7 +43,7 @@ const Contact = () => {
             clubMentor: "Pranav Sutar",
             phone: "9559530544",
             email: "astronomyclub@iittp.ac.in",
-            discord: "",
+            discord: "https://discord.com/invite/7nqZBQX9",
             linkedin: "https://www.linkedin.com/in/gagan-vedhi-iitt-129314244/",
             instagram: "https://www.instagram.com/astroclubiitt/",
             color: "rgb(141, 184, 240)"

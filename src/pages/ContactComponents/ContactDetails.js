@@ -21,7 +21,7 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                         <FiPhone
                             aria-label='Contact Number'
                             size={30}
-                            tabIndex="1"
+                            // tabIndex="1"
                             color="white"
                         />
                         <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
