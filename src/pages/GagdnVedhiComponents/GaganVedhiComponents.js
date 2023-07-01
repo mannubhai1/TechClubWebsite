@@ -96,8 +96,8 @@ function GaganVedhiComponents() {
           </div>
           <div className={styles.aboutcont}>
             <div className="col-md-5 m-5 rounded-3xl border-2 border-cyan-500 bg-white">
-              <h2 className="color-white font-bold py-3">History</h2>
-              <p className=" text-black italic font-semibold text-lg bold text-left px-3 color-white">
+              <h2 className="font-bold py-3">History</h2>
+              <p className=" text-black italic font-semibold text-lg bold text-left px-4 py-3 tracking-wide color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
                 club was founded 6 years ago by Anup Kulkarni with the name
@@ -113,7 +113,7 @@ function GaganVedhiComponents() {
             </div>
             <div className="col-md-5 m-5 rounded-3xl border-2 border-cyan-500 bg-white">
               <h2 className="color-yellow font-bold py-3">Motivation</h2>
-              <p className="text-black text-left font-bold italic px-3 md:text-xl">
+              <p className="text-black text-left font-bold italic px-3 py-8 tracking-widest md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
                 The Club Aims to establish a strong community of Astrophiles to
@@ -164,7 +164,7 @@ function GaganVedhiComponents() {
                   worth Rs. 10,000/- .
                 </p>
                 <div className={styles.bottom}>
-                  <a href="!#" alt="">
+                  <a href="!#" alt="" style={{pointerEvents: 'none'}}>
                     {" "}
                     Read more
                   </a>
@@ -186,7 +186,7 @@ function GaganVedhiComponents() {
                   A three-hour trip to RSC of Tirupati for a sky-gazing session
                 </p>
                 <div className={styles.bottom}>
-                  <a href="!#" alt="">
+                  <a href="!#" alt="" style={{pointerEvents: 'none'}}>
                     {" "}
                     Read more
                   </a>
@@ -206,7 +206,7 @@ function GaganVedhiComponents() {
                   Tirupati in which many competitions were conducted..
                 </p>
                 <div className={styles.bottom}>
-                  <a href="!#" alt="">
+                  <a href="!#" alt="" style={{pointerEvents: 'none'}}>
                     {" "}
                     Read more
                   </a>
@@ -228,7 +228,7 @@ function GaganVedhiComponents() {
                   was held at IISER, and the second day at IIT.
                 </p>
                 <div className={styles.bottom}>
-                  <a href="!#" alt="">
+                  <a href="!#" alt="" style={{pointerEvents: 'none'}}>
                     {" "}
                     Read more
                   </a>
@@ -373,7 +373,7 @@ function GaganVedhiComponents() {
               <div className="mb-9 flex justify-center">
                 <a
                   href={facebook}
-                  className="mr-10 text-neutral-800 dark:text-neutral rounded border-1 hover:bg-blue-900 p-1 hover:bg-white hover:rounded-md"
+                  className="mr-10 text-neutral-800 dark:text-neutral rounded border-1 hover:bg-blue-800 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +386,7 @@ function GaganVedhiComponents() {
                 </a>
                 <a
                   href={discord}
-                  className="mr-10 text-neutral-800 dark:text-neutral-200 rounded hover:bg-blue-600 border-1 p-1 hover:bg-white hover:rounded-md"
+                  className="mr-10 text-neutral-800 dark:text-neutral-200 rounded hover:bg-blue-700 border-1 p-1 hover:bg-white hover:rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -468,7 +468,7 @@ function GaganVedhiComponents() {
               © 2023 Copyright: 
               <a
                 className="text-neutral-600 dark:text-neutral-400"
-                href="https://www.iittp.ac.in/"
+                href="/" style= {{pointerEvents: 'none'}}
               >
                 <span>  Gagan Vedhi </span>
               </a>

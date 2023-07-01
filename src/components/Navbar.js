@@ -15,7 +15,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="/" style={{pointerEvents: 'none'}}>
                 Clubs
               </a>
               <ul className={styles.submenu}>
@@ -52,7 +52,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a href="/">
+              <a href="/blog">
                 Blog
               </a>
             </li>

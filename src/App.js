@@ -9,6 +9,7 @@ import WingedVoyage from "./pages/WingedVoyage";
 import SigmaSquad from "./pages/SigmaSquad";
 import GaganVedhi from "./pages/GaganVedhi";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog/Blog";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/techmaniacs" element={<Techmaniacs />} />
           <Route path="/wingedvoyage" element={<WingedVoyage />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/blog" element={<Blog/>} />
         </Routes>
       </BrowserRouter>
     </div>
