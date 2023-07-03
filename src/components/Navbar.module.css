@@ -6,14 +6,19 @@
 
 .navbarLogo {
   z-index: 100;
-  width: 7vw;
-  height: 8vh;
+  width: 12vh;
+  height: 7vh;
   /* margin-right: 2vw; */
-  margin-left: 1vw;
+  margin-left: 1vw; 
 }
 
 .main {
   background-color: black;
+}
+
+.container{
+  margin: 0 auto;
+  z-index: 1;
 }
 
 /* Menu Dropdown */
@@ -40,7 +45,7 @@
 
 .menu {
   margin: 20px 25vw;
-  width: 800px;
+  /* width: 40%; */
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -76,9 +81,10 @@
 .submenu {
   z-index: 100;
   position: absolute;
-  width: 200px;
+  width: 13vw;
+  text-align: center;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -6vw;
   transform: skewX(-25deg);
   transform-origin: left top;
 }
@@ -151,4 +157,44 @@
 
 .menu > li:hover .submenu li:nth-child(odd) {
   transform: skewX(-25deg) translateX(-15px);
+}
+
+
+@media only screen and (max-width: 480px) {
+  .menu{
+    width: 40vw;
+  }
+
+  .container{
+    position: relative;
+    left: -5vh;
+  }
+
+  ul .submenu{
+    width: 50vw;
+    /* z-index: 1000; */
+    left: 105%;
+  }
+}
+
+@media screen and (max-width:900px) and (min-width: 481px) {
+  .menu{
+    width: 40vw;
+  }
+
+  .container{
+    position: relative;
+    left: -5vh;
+    width: 100vw;
+  }
+
+  .container > ul{
+    width: 100vw;
+  }
+
+  ul .submenu{
+    width: 25vw;
+    /* z-index: 1000; */
+    left: 30%;
+  }
 }

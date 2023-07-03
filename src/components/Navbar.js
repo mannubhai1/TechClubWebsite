@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg">
       <div className={`${styles.main} container-fluid`}>
         <img src="./iitt_logo.png" alt="iitt logo" className={styles.navbarLogo} />
-        <div className="container">
+        <div className={styles.container}>
           <ul className={`${styles.menu} ${styles.cf}`}>
             <li>
               <a href="/">
