@@ -5,6 +5,7 @@ import Programs from './Programs/Programs'
 import ClubHead from './ClubHead/ClubHead'
 import Footer from './Footer/Footer'
 import Achievements from './Achievements/Achievements'
+import './Ecell.css'
 
 const Ecell = () => {
   return (

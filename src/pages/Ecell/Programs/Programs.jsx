@@ -1,39 +1,57 @@
 import React from "react";
 import { programsData } from "./programsData";
-import './Programs.css'
-import rightArrow from '../../../images/rightArrow.png'
-import {motion} from 'framer-motion'
+import "./Programs.css";
+import rightArrow from "../../../images/rightArrow.png";
+import { motion } from "framer-motion";
 
 const Programs = () => {
-  
   return (
     <div className="Programs">
       <div className="programs-header">
-        <h3 className="mobile-header">Programs</h3>
-        <motion.span className="stroke-text"
-        initial={{ x: "-2rem", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{
-          duration: 2,
-          type: "spring",
-        }}
-        >Explore </motion.span>
+        <motion.h3
+          className="mobile-header"
+          initial={{ y: "2rem", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "spring",
+          }}
+        >
+          Programs
+        </motion.h3>
         <motion.span
-        initial={{ y: "-2rem", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{
-          duration: 2,
-          type: "spring",
-        }}
-        >Empower</motion.span>
-        <motion.span className="stroke-text"
-        initial={{ x: "2rem", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{
-          duration: 2,
-          type: "spring",
-        }}
-        > succeed</motion.span>
+          className="stroke-text"
+          initial={{ x: "-2rem", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "spring",
+          }}
+        >
+          Explore{" "}
+        </motion.span>
+        <motion.span
+          initial={{ y: "-2rem", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "spring",
+          }}
+        >
+          Empower
+        </motion.span>
+        <motion.span
+          className="stroke-text"
+          initial={{ x: "2rem", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "spring",
+          }}
+        >
+          {" "}
+          succeed
+        </motion.span>
       </div>
 
       <div className="program-categories">
