@@ -92,3 +92,24 @@
 .content {
   flex-grow: 1;
 }
+
+@media screen and (max-width: 800px){
+  .Footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social{
+    align-items: center;
+    gap: 20px;
+  }
+
+  .connect{
+    margin-top: 20px;
+    flex-direction: row;
+  }
+
+  .social > ul > li > a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+}

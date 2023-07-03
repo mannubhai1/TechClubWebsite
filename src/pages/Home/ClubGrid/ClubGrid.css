@@ -114,6 +114,24 @@
   .clubgrid {
     padding: 0 1rem;
   }
+
+  .clubgrid > span:first-child {
+    color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+  }
+
+  .clubgrid > span:nth-child(2){
+    font-size: 1rem;
+    align-self: center;
+    padding-left: 1.7rem;
+  }
+
   .grid-container {
     display: flex;
     flex-direction: column;

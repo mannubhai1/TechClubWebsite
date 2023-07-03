@@ -5,6 +5,7 @@ import Carousel from "./Carousel";
 import About from "./About/About";
 import ClubGrid from "./ClubGrid/ClubGrid";
 import { motion } from "framer-motion";
+// import {View, StyleSheet, Text, useWindowDimensions} from 'react-native';
 import Footer from "./Footer/Footer";
 
 const Home = () => {
@@ -36,7 +37,6 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="blur home-blur"></div>
       <div className="banner">
         <motion.div variants={container}
           initial="hidden"  
