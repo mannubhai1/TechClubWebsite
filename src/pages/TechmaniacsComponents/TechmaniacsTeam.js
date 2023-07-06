@@ -5,7 +5,7 @@ const TechmaniacsTeam = () => {
             <div className="sep1"></div>
             <div className="leads">
                 <div className="heads">
-                        Chirag Kotian
+                    <p>Chirag Kotian</p>
                 </div>
             </div>
         </div>

@@ -87,7 +87,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 2vh;
-    overflow: auto;
 }
 
 .leads div{
@@ -98,13 +97,52 @@
     color: black;
     font-weight: 500;
     margin-bottom: 2vh;
-    margin-left: 2vh;
     height: 10vh;
     min-width: 27vh;
     max-width: 27vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 610px) and (min-width: 532px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+}
+
+@media (max-width: 531px) and (min-width: 430px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .heads p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 429px) and (min-width: 311px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .heads p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 310px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .heads p {
+        font-size: 8px;
+    }
 }
 
 .TechIG {
@@ -176,6 +214,22 @@
     font-size: large;
 }
 
+@media (max-width: 420px) {
+
+    .ig-title {
+        font-weight: 600;
+        font-size: 10px
+    }
+}
+
+@media (max-width: 320px) {
+
+    .ig-title {
+        font-weight: 600;
+        font-size: 5px
+    }
+}
+
 .electronicspic, .arduinopic, .dronespic, .roboticspic {
     height: 17vh;
 }
@@ -190,6 +244,12 @@
     max-width: 50vw;
     max-height: 25vh;
     overflow-y: scroll;
+}
+
+@media (max-width: 420px) {
+    .show {
+        font-size: 10px;
+    }
 }
 
 .hide {
@@ -242,4 +302,88 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2vh;
+}
+
+@media (min-width: 541px) and (max-width: 770px) {
+    .phone p {
+        font-size: 20px;
+    }
+
+    .email p {
+        font-size: 20px;
+    }
+
+    .socialMedia p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 448px) {
+    .phone p {
+        font-size: 12px;
+    }
+
+    .email p {
+        font-size: 12px;
+    }
+
+    .socialMedia p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 290px) {
+    .phone p {
+        font-size: 9px;
+    }
+
+    .email p {
+        font-size: 9px;
+    }
+
+    .socialMedia p {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 449px) and (max-width: 540px) {
+    .phone p {
+        font-size: 14px;
+    }
+
+    .email p {
+        font-size: 14px;
+    }
+
+    .socialMedia p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 771px) {
+    .phone p {
+        font-size: 20px;
+    }
+
+    .email p {
+        font-size: 20px;
+    }
+
+    .socialMedia p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 291px) and (max-width: 330px) {
+    .phone p {
+        font-size: 10px;
+    }
+
+    .email p {
+        font-size: 10px;
+    }
+
+    .socialMedia p {
+        font-size: 10px;
+    }
 }

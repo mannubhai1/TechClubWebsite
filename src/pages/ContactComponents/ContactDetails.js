@@ -7,6 +7,9 @@ import { Link } from "react-router-dom"
 
 const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin, instagram, discord, color}) => {
 
+    const screenWidth = window.outerWidth
+    const iconSize = screenWidth > 450 ? 30 : screenWidth < 420 ? 17 : 20
+
     return (
         <div className="contact-container">
             <div 
@@ -20,11 +23,11 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                     <div className="phone-contact">
                         <FiPhone
                             aria-label='Contact Number'
-                            size={30}
+                            size={iconSize}
                             // tabIndex="1"
                             color="white"
                         />
-                        <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                        <p style={{ paddingTop: "2vh" }}>
                             +91 {phone}
                         </p>
                     </div>
@@ -34,12 +37,12 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                             <IoIosMail
                                 role='button'
                                 aria-label='Email'
-                                size={30}
+                                size={iconSize}
                                 tabIndex="0"
                                 color='white'
                             />
                         </Link>
-                        <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                        <p style={{ paddingTop: "2vh" }}>
                             {email}
                         </p>
                     </div>
@@ -50,7 +53,7 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                                     <AiFillLinkedin
                                         role='button'
                                         aria-label='Linkedin'
-                                        size={30}
+                                        size={iconSize}
                                         tabIndex="4"
                                         color='white'
                                     />
@@ -62,7 +65,7 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                                     <FaInstagram
                                         role='button'
                                         aria-label='Instagram'
-                                        size={30}
+                                        size={iconSize}
                                         tabIndex="3"
                                         color='white'
                                     />
@@ -74,7 +77,7 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                                     <BsDiscord
                                         role='button'
                                         aria-label='Discord'
-                                        size={30}
+                                        size={iconSize}
                                         tabIndex="2"
                                         color='white'
                                     />
@@ -82,7 +85,7 @@ const ContactDetails = ({clubName, clubHead, clubMentor, phone, email, linkedin,
                                 null
                             }
                         </div>
-                        <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                        <p style={{ paddingTop: "2vh" }}>
                             Follow Us
                         </p>
                     </div>

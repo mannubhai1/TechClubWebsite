@@ -27,7 +27,7 @@ const TechmaniacsIG = () => {
                 <DropdownText
                     className={"arduino"}
                     imgsrc={arduinopic}
-                    alt={"Arduino, SBCs/Microcontrollers, and IoT"}
+                    alt={"Arduino, SBCs, Microcontrollers, and IoT"}
                     text={arduinoText}
                 />
                 <DropdownText

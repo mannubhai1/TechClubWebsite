@@ -20,7 +20,7 @@ const SigmaSquadFooter = () => {
                         size={30}
                         tabIndex="1"
                     />
-                    <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                    <p style={{ paddingTop: "2vh" }}>
                         +91 xxxxxxxxxx
                     </p>
                 </div>
@@ -35,7 +35,7 @@ const SigmaSquadFooter = () => {
                             color='white'
                         />
                     </Link>
-                    <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                    <p style={{ paddingTop: "2vh" }}>
                         {email}
                     </p>
                 </div>
@@ -69,7 +69,7 @@ const SigmaSquadFooter = () => {
                             />
                         </Link>
                     </div>
-                    <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                    <p style={{ paddingTop: "2vh" }}>
                         Follow Us
                     </p>
                 </div>

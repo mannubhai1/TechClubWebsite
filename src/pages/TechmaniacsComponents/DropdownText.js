@@ -12,7 +12,7 @@ const DropdownText = ({ className, imgsrc, alt, text }) => {
             onClick={handleClick}>
             <img src={imgsrc} alt={alt} 
                 className={`${className}pic`} />
-            <p>{alt}</p>
+            <p className='ig-title'>{alt}</p>
             <div className={open ? "show" : "hide"}>
                 {text}
             </div>

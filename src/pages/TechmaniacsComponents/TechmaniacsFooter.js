@@ -20,7 +20,7 @@ const TechmaniacsFooter = () => {
                         size={30}
                         tabIndex="1"
                     />
-                    <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                    <p style={{ paddingTop: "2vh" }}>
                         +91 8591757109
                     </p>
                 </div>
@@ -35,7 +35,7 @@ const TechmaniacsFooter = () => {
                             color='white'
                         />
                     </Link>
-                    <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                    <p style={{ paddingTop: "2vh" }}>
                         techmaniacs@iittp.ac.in
                     </p>
                 </div>
@@ -69,7 +69,7 @@ const TechmaniacsFooter = () => {
                             />
                         </Link>
                     </div>
-                    <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                    <p style={{ paddingTop: "2vh" }}>
                         Follow Us
                     </p>
                 </div>

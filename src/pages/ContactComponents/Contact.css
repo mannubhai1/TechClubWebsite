@@ -28,6 +28,42 @@
     justify-content: center;
 }
 
+@media (max-width: 635px) and (min-width: 590px) {
+    .tech-sec-contacts p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 589px) and (min-width: 485px) {
+    .tech-sec-contacts p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 484px) and (min-width: 450px) {
+    .tech-sec-contacts p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 449px) and (min-width: 400px) {
+    .tech-sec-contacts p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 399px) and (min-width: 320px) {
+    .tech-sec-contacts p {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 319px) and (min-width: 0px) {
+    .tech-sec-contacts p {
+        font-size: 5px;
+    }
+}
+
 .contact-container {
     display: flex;
     justify-content: center;
@@ -55,6 +91,42 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 635px) and (min-width: 590px) {
+    .contact-details p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 589px) and (min-width: 485px) {
+    .contact-details p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 484px) and (min-width: 450px) {
+    .contact-details p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 449px) and (min-width: 400px) {
+    .contact-details p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 399px) and (min-width: 320px) {
+    .contact-details p {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 319px) and (min-width: 0px) {
+    .contact-details p {
+        font-size: 5px;
+    }
 }
 
 .phone-contact {
