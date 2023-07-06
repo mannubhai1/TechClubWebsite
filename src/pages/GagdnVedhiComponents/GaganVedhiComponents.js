@@ -46,17 +46,17 @@ function GaganVedhiComponents() {
 
 
         <div className={styles.desc}>
-          <div className={styles.box}>
+          <div className={`${styles.box}`}>
             <div className={`${styles.titleContainer} ${styles.gazingcontainer}`}>
               <div className={styles.titleWords}>
                 <div className={`${styles.title1} ${styles.gazingtitle1}`}>
                   <h1 className={`${styles.title2} ${styles.gazing}`}>
-                    Gazing beyond our world with Gagan Vedhi
+                    Gazing beyond our world with Gagan Vedhi 
                   </h1>
                 </div>
               </div>
             </div>
-            <p className="italic text-black rounded-2xl font-semibold text-lg bold text-left w-[45vw] relative -left-[6vw] px-8 color-white bg-white py-7 my-16">
+            <p className="italic text-black object-contain rounded-2xl font-semibold bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16">
               Exploring the vast expanse of the universe and uncovering its
               secrets is a thrilling experience right?, and it becomes even more
               exciting when shared with like-minded individuals. That's what
@@ -94,9 +94,9 @@ function GaganVedhiComponents() {
             </div>
           </div>
           <div className={styles.aboutcont}>
-            <div className="col-md-5 md:m-5 md:rounded-3xl md:border-2 border-cyan-500 bg-white">
+            <div className=" col-md-5 md:m-5 md:rounded-3xl md:border-2 border-cyan-500 bg-white">
               <h2 className="font-bold py-3">History</h2>
-              <p className=" text-black italic font-semibold md:text-lg bold md:text-left md:px-4 md:py-3 md:tracking-wide color-white">
+              <p className=" text-black italic font-semibold md:text-lg bold md:text-left md:px-8 md:py-3 md:tracking-wide color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
                 club was founded 6 years ago by Anup Kulkarni with the name

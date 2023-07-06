@@ -27,7 +27,16 @@ html{
 
 .desc{
     padding: 10vh auto;
-    height: 50vh;  
+    height: 100%;  
+    width: 100%;
+    overflow-x: hidden;
+    /* margin-bottom: 15vh; */
+    /* max-width: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
 }
 
 /* About us */
@@ -150,7 +159,7 @@ h1.title2 {
 
 .aboutc{
     padding-top: 8vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 
@@ -325,6 +334,15 @@ h1.title2 {
 
 .desc .box p{
     box-shadow: 0 0 6.56vh 1.97vh #48abe0;
+    object-fit: fill;
+    /* width: 80vw; */
+    max-width: 100%;
+    font-size: medium;
+    max-height: 450px;
+    object-fit: contain;
+    /* margin: 0 auto; */
+    /* max-width: 100%; */
+    word-wrap: break-word;
 }
 
 .content{
@@ -342,8 +360,12 @@ h1.title2 {
 
 .box {
 	position: relative;
-	margin: 18vh auto 12vh auto;
-	max-width: 33.75vw;
+	margin: 18vh 30vw 12vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* height: max-content; */
+	max-width: 100%;
 }
 
 .ribbon {
@@ -575,7 +597,7 @@ h1.title2 {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
     html,body{
         overflow-x: hidden;
         height: 100%;
@@ -584,17 +606,49 @@ h1.title2 {
         padding: 0;
     }
 
+    .desc .box{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .desc .box p{
+        font-size: 14.3px;
+        margin: 10vh 1vh 0 1vh;
+        padding: 2vh;
+        width: 50vh;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .Row section i,
+    .centreline a,
+    .wrapper div{
+        display: none;
+    }
+    
+    .aboutc{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
     .aboutc .aboutcont{
         max-width: -webkit-fill-available;
         display: flex;
         flex-wrap: wrap;
         text-align: center;
+        
     }
 
     .aboutc .aboutcont div{
         height: 45vh;
         width: 100%;
         margin: 3vh 3vh;
+        word-wrap: break-word;
     }
 
     /* .aboutc .aboutcont div{
@@ -602,9 +656,12 @@ h1.title2 {
     } */
 
     .aboutc .aboutcont p{
-        font-size: 11.3px;
-        margin: auto 5px;
-        padding: 1vh;
+        font-size: 13.3px;
+        margin: auto 10px;
+        padding: 2vh;
+        border-radius: 10px;
+        object-fit: cover;
+        
     }
 
     .aboutc .aboutcont h2{
@@ -623,15 +680,7 @@ h1.title2 {
     }
 
 
-    .box p{
-        height: 47vh;
-        width: 75vw;
-        padding: 3vh;
-        top: -4vh;
-        left: -20vw;
-        font-size: 13px;
-        line-height: 12px;
-    }
+
     .aboutc{
         display: flex;
         flex-wrap: wrap;
@@ -692,8 +741,8 @@ h1.title2 {
         width: 42vh;
         /* max-width: 100%; */
         margin: auto;
-        left: -23vw;
-        position: relative;
+        /* left: -23vw; */
+        /* position: relative; */
         bottom: 5vh;
     }
 
@@ -720,13 +769,19 @@ h1.title2 {
     }
   }
 
-  @media screen and (max-width:900px) and (min-width: 481px) {
+  @media screen and (max-width:790px) and (min-width: 581px) {
     html,body{
         overflow-x: hidden;
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    .Row section i,
+    .centreline a,
+    .wrapper div{
+        display: none;
     }
 
     .aboutc{
@@ -767,6 +822,7 @@ h1.title2 {
         height: 50vh;
         width: 65vw;
         padding: 3vh;
+        /* position: relative; */
         top: 2vh;
         left: -15vw;
         font-size: 22px;
@@ -812,8 +868,9 @@ h1.title2 {
 
     .gazingcontainer{
         width: 40vh;
-        left: -11vw;
-        position: relative;
+        /* max-width: 100%; */
+        /* left: -11vw;
+        position: relative; */
     }
 
     .titleWords .gazingtitle1{
