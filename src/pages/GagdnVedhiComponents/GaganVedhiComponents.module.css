@@ -13,6 +13,8 @@
 }
 .big{
     background-image: url(/public/gv_image/home-background.png);
+    /* background-color: rgb(195, 70, 195); */
+    z-index: -100;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -61,7 +63,7 @@ html{
 
 
 h1.title2 {
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-family: Segoe UI, "Rockwell Extra Bold";
     text-align: center;
     letter-spacing: 3px;
@@ -74,6 +76,7 @@ h1.title2 {
     -webkit-font-smoothing: antialiased;
     background-repeat: repeat;
     font-weight: 800;
+    margin: 4%;
     display: flex;
     flex-shrink: inherit;
     text-transform: uppercase;
@@ -149,12 +152,10 @@ h1.title2 {
 } */
 
 
-.aboutcont{
+/* .aboutcont{
     margin-top: 8vh;
-    display: flex;
     border: 0.656vh;
-    justify-content: space-between;
-}
+} */
 
 
 .aboutc{
@@ -334,14 +335,10 @@ h1.title2 {
 
 .desc .box p{
     box-shadow: 0 0 6.56vh 1.97vh #48abe0;
-    object-fit: fill;
-    /* width: 80vw; */
     max-width: 100%;
-    font-size: medium;
+    font-size: large;
     max-height: 450px;
     object-fit: contain;
-    /* margin: 0 auto; */
-    /* max-width: 100%; */
     word-wrap: break-word;
 }
 
@@ -597,6 +594,7 @@ h1.title2 {
 }
 
 
+
 @media only screen and (max-width: 580px) {
     html,body{
         overflow-x: hidden;
@@ -641,11 +639,11 @@ h1.title2 {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        
+        flex-direction: column;
     }
 
     .aboutc .aboutcont div{
-        height: 45vh;
+        /* height: 45vh; */
         width: 100%;
         margin: 3vh 3vh;
         word-wrap: break-word;
@@ -660,7 +658,7 @@ h1.title2 {
         margin: auto 10px;
         padding: 2vh;
         border-radius: 10px;
-        object-fit: cover;
+        object-fit: contain;
         
     }
 
@@ -692,7 +690,7 @@ h1.title2 {
 
     .titleWords .title1 .aboutUS{
         line-height: 4vh;
-        font-size: 3.5vh;
+        font-size: 4vh;
     }
 
     .titleWords .title1 .achieve{

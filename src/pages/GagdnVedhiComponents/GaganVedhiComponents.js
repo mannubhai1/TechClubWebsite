@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./GaganVedhiComponents.module.css";
-// import { Link } from "react-router-dom";
+import Activities from "./Activities";
 
 function GaganVedhiComponents() {
   const email = "astronomyclub@iittp.ac.in";
@@ -56,7 +56,7 @@ function GaganVedhiComponents() {
                 </div>
               </div>
             </div>
-            <p className="italic text-black object-contain rounded-2xl font-semibold bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16">
+            <p className="italic text-black object-contain rounded-2xl font-semibold bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16 ">
               Exploring the vast expanse of the universe and uncovering its
               secrets is a thrilling experience right?, and it becomes even more
               exciting when shared with like-minded individuals. That's what
@@ -93,10 +93,11 @@ function GaganVedhiComponents() {
               </div>
             </div>
           </div>
-          <div className={styles.aboutcont}>
-            <div className=" col-md-5 md:m-5 md:rounded-3xl md:border-2 border-cyan-500 bg-white">
-              <h2 className="font-bold py-3">History</h2>
-              <p className=" text-black italic font-semibold md:text-lg bold md:text-left md:px-8 md:py-3 md:tracking-wide color-white">
+          <div className={`${styles.aboutcont} flex flex-row justify-around content-around`}>
+            {/* <div className=" col-md-5 md:m-5 md:rounded-3xl md:border-2 border-cyan-500 overflow-auto bg-white"> */}
+            <div className="flex flex-col md:ml-[10vh] md:rounded-3xl md:border-2 max-w-2xl border-cyan-500 w-1/2 overflow-auto bg-white">
+              <h2 className="flex flex-col justify-center m-auto font-bold py-3 justify-self-center">History</h2>
+              <p className=" text-black italic font-semibold md:text-lg bold text-left md:px-8 md:py-3 overflow-auto md:tracking-wide color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
                 club was founded 6 years ago by Anup Kulkarni with the name
@@ -110,9 +111,9 @@ function GaganVedhiComponents() {
                 continues unwaveringly.{" "}
               </p>
             </div>
-            <div className="col-md-5 md:m-5 rounded-3xl border-2 border-cyan-500 bg-white">
-              <h2 className="color-yellow font-bold md:py-3">Motivation</h2>
-              <p className="text-black text-left font-bold italic md:px-3 md:py-8 tracking-widest md:text-xl">
+            <div className="flex flex-col w-1/2 md:mr-[10vh] md:rounded-3xl md:border-2 border-cyan-500 overflow-auto bg-white">
+              <h2 className="color-yellow font-bold m-auto md:py-3">Motivation</h2>
+              <p className="text-black text-left font-bold italic px-12 py-8 tracking-widest md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
                 The Club Aims to establish a strong community of Astrophiles to
@@ -126,7 +127,7 @@ function GaganVedhiComponents() {
 
 
 
-          {/* Description*/}
+          {/* Achievements and Activities*/}
 
 
 
@@ -239,6 +240,7 @@ function GaganVedhiComponents() {
           <br />
 
 
+          <Activities/> 
 
 
 
