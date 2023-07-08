@@ -4,6 +4,8 @@ import { FiPhone } from "react-icons/fi"
 
 const TechSec = () => {
     const email = "technical_sec@iittp.ac.in"
+    const screenWidth = window.outerWidth
+    const iconSize = screenWidth > 450 ? 30 : screenWidth < 420 ? 17 : 20
 
     return(
         <div className="tech-sec-container">
@@ -14,11 +16,11 @@ const TechSec = () => {
                     <div className="phone-contact">
                         <FiPhone
                             aria-label='Contact Number'
-                            size={30}
+                            size={iconSize}
                             // tabIndex="1"
                             color="white"
                         />
-                        <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                        <p style={{ paddingTop: "2vh" }}>
                             +91 7974466309
                         </p>
                     </div>
@@ -28,12 +30,12 @@ const TechSec = () => {
                             <IoIosMail
                                 role='button'
                                 aria-label='Email'
-                                size={30}
+                                size={iconSize}
                                 tabIndex="0"
                                 color='white'
                             />
                         </Link>
-                        <p style={{ fontSize: "medium", paddingTop: "2vh" }}>
+                        <p style={{ paddingTop: "2vh" }}>
                             technical_sec@iittp.ac.in
                         </p>
                     </div>

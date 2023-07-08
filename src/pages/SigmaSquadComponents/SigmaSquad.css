@@ -83,7 +83,7 @@
 
 .heads{
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     background-color: rgb(215, 215, 215);
     margin-bottom: 2vh;
     margin-left: 2vh;
@@ -93,6 +93,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 610px) and (min-width: 532px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+}
+
+@media (max-width: 531px) and (min-width: 430px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .heads p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 429px) and (min-width: 311px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .heads p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 310px) {
+    .heads {
+        min-width: 25vw;
+        max-width: 25vw;
+    }
+
+    .heads p {
+        font-size: 8px;
+    }
 }
 
 .SSObj {
@@ -111,8 +151,7 @@
 
 .SSFooter {
     color: aliceblue;
-    font-size: large;
-    font-weight: 700;
+    font-weight: 600;
     background: linear-gradient(to right, blue, red);
     bottom: 0;
     width: 100%;
@@ -130,7 +169,7 @@
 .socialMedia {
     display: flex;
     flex-direction: column;
-    width: 33.33vw;
+    width: 33.33%;
 }
 
 .accounts {
@@ -152,7 +191,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 33.33vw;
+    width: 33.33%;
 }
 
 .phone p{
@@ -164,9 +203,93 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 33.33vw;
+    width: 33.33%;
 }
 
 .email p{
     color: white;
+}
+
+@media (min-width: 541px) and (max-width: 770px) {
+    .phone p{
+        font-size: 20px;
+    }
+
+    .email p{
+        font-size: 20px;
+    }
+
+    .socialMedia p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 448px) {
+    .phone p {
+        font-size: 12px;
+    }
+
+    .email p {
+        font-size: 12px;
+    }
+
+    .socialMedia p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 290px) {
+    .phone p {
+        font-size: 9px;
+    }
+
+    .email p {
+        font-size: 9px;
+    }
+
+    .socialMedia p {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 449px) and (max-width: 540px) {
+    .phone p {
+        font-size: 14px;
+    }
+
+    .email p {
+        font-size: 14px;
+    }
+
+    .socialMedia p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 771px) {
+    .phone p {
+        font-size: 20px;
+    }
+
+    .email p {
+        font-size: 20px;
+    }
+
+    .socialMedia p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 291px) and (max-width: 330px) {
+    .phone p {
+        font-size: 10px;
+    }
+
+    .email p {
+        font-size: 10px;
+    }
+
+    .socialMedia p {
+        font-size: 10px;
+    }
 }

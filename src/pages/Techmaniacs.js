@@ -14,10 +14,12 @@ const Techmaniacs = () => {
       <TechmaniacsAbout />
       <img src={techmeetPic}
           style={{
-            paddingTop:"3vh",
-            paddingBottom:"2.5vh",
-            height:"100vh",
-            width:"98.8vw"
+            display: 'block',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '70%',
+            paddingTop: '1.5vh',
+            paddingBottom: '1.5vh'
           }}
           alt='Tech Meet 11.0'
       />
