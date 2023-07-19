@@ -1,49 +1,34 @@
 import React from 'react'
 import styles from './Activities.module.css'
+import { useEffect } from 'react';
 
 const Activities = () => {
+    var hidden1;
+    var hidden2; 
+    useEffect(() => {
+        hidden1 = document.querySelector('.curr');
+        hidden2 = document.querySelector('.upcoming');
+    }, [])
+    
 
-    const url = "https://raw.githubusercontent.com/iMJ007/Time-Tracking-Dashboard/main/data.json";
-let dataList = "";
-const fetchJson = async () => {
-    try {
-        const data = await fetch(url);
-        dataList = await data.json();
-        updateValues();
-    } catch (error) {
-        console.log(error);
-    }
-};
-const activityContainers = document.querySelectorAll(".activityContainer");
-const periods = document.querySelectorAll('input[type="radio"]');
-
-const updateValues = (period = 'past') => {
-    for (const activityContainer of activityContainers) {
-        if (!dataList){
-            return;
+    const handleClick1 = ()=> {
+        // console.log(hidden1 + " hey ");
+        if(hidden1!==null && hidden1.classList.contains('hidden')){
+            hidden1.classList.remove('hidden');
+            hidden1.classList.add('flex');
+            hidden2.classList.remove('flex');
+            hidden2.classList.add('hidden');
         }
-        let activityType = activityContainer.querySelector('span:first-child').innerText;
-        let activityDetails = dataList.find((object) => object.title === activityType);
-        let activityTimeFrame = activityDetails.timeframes[`${period}`];
-        console.log(activityDetails);
-        activityContainer.querySelector('h2').innerText = `${activityTimeFrame.current}hr${activityTimeFrame.current > 1 ? 's' : ''}`;
-
-        if (period !== 'past'){
-            activityContainer.querySelector('p').innerText = `Last ${period === 'current' ? 'Week' : 'Month'} - ${activityTimeFrame.previous}hr${activityTimeFrame.previous > 1 ? 's' : ''}`;
-        } else{
-            activityContainer.querySelector('p').innerText = `Yesterday - ${activityTimeFrame.previous}hr${activityTimeFrame.previous > 1 ? 's' : ''}`;
-        }
-
+       
     }
-}
-
-for (let period of periods) {
-    period.addEventListener('change', () => {
-        updateValues(period.value.toLowerCase());
-    })
-}
-
-fetchJson();
+    const handleClick2 = ()=> {
+        if(hidden2!==null && hidden2.classList.contains('hidden')){
+            hidden2.classList.remove('hidden');
+            hidden2.classList.add('flex');
+            hidden1.classList.remove('flex');
+            hidden1.classList.add('hidden');
+        }
+    }
 
     return (
         <>
@@ -57,62 +42,85 @@ fetchJson();
                         <h1 className='text-5xl'>Gagan Vedhi</h1>
                 </div>
                 <fieldset>
-                    {/* <input type="radio" name="period" id={styles.past} value="past" checked/><label htmlFor="past">Past Events</label>
-                    <input type="radio" name="period" id={styles.current} value="current"/><label htmlFor="current">Current Events</label>
-                    <input type="radio" name="period" id={styles.upcoming} value="upcoming"/><label htmlFor="upcoming">Upcoming Events</label> */}
-                    <div className={`p-0 h-[20vh] m-auto w-full ${styles.eventdiv}`}>
-                            <button className='px-4 py-8 m-auto font-sans text-xl font-bold'><h3 className={styles.eventheading}>Upcoming Events</h3></button>
-                        {/* <button className=' border-sky-00 border-4 px-20'>Previous Events</button>
-                        <button className=' border-sky-00 border-4 px-20'>Previous Events</button> */}
+                    <div className={`flex flex-col md:flex-wrap p-0 h-[25vh]`}>
+                        <div className={styles.eventDiv}>
+                            <button onClick={handleClick1} className={`px-[4.8vh] py-4 font-sans text-xl font-bold `}> <h3 className={styles.eventheading}>Recent Events</h3></button>
+                        </div>
+                        <div className={styles.eventDiv}>
+                            <button onClick={handleClick2} className={`px-5 py-4 m-auto font-sans text-xl font-bold`}><h3 className={styles.eventheading}>Upcoming Events</h3></button>
+                        </div>
                     </div>
                 </fieldset>
 
             </section>
+            <div className='flex flex-col gap-8 ml-8 w-[72vw]'> 
 
-            <div className={styles.activityContainer}>
-                {/* <span>Work</span> */}
-                {/* <img className={styles.menuButton} src="https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-ellipsis.svg" alt="menu"/> */}
-                    <h2>Event 1</h2>
+                <div className={`curr flex flex-row gap-4 ${styles.eventView}`}>
 
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa at, praesentium, ad quis tempore aliquid delectus impedit quibusdam dolorum sed voluptatem reprehenderit doloremque rerum molestias eius, et quam animi.</p>
-                    <span>dd/mm/yyyy</span>
+                    <div className={`${styles.activityContainer}`}>
+                        <h2>Regional Science Centre Trip</h2> 
+
+                        <p >A three-hour trip to RSC of Tirupati for a sky-gazing session.</p>
+                        {/* <span>dd/mm/yyyy</span> */}
+
+                    </div>
+
+                    <div className={`${styles.activityContainer}`}>
+                        <h2>Athereum</h2>
+
+                        <p>A Joint fest organized by Astronomy Clubs of IIT and IISER Tirupati in which many competitions were conducted.</p>
+                        {/* <span>dd/mm/yyyy</span> */}
+
+                    </div>
+
+                    <div className={`${styles.activityContainer}`}>
+                        <h2>LIGO Workshop</h2>
+                        <p>A two-day Offline workshop on Gravitational Waves Detection by Dr. Apratim and Dr. Suresh from IUCAA Pune. It had received huge participation from IIT and IISER Tirupati. The first day was held at IISER, and the second day at IIT.</p>
+                        {/* <span>dd/mm/yyyy</span> */}
+
+                    </div>
+
+                </div>
+
+                <div className={`upcoming hidden flex-row gap-4 ${styles.eventView}`}>
+
+                    <div className={`${styles.activityContainer2}`}>
+
+                        <div className={styles.upcomingEvents}>
+                            <h3 className={`text-white px-2`}>Documentary cum quiz 3.0</h3>
+                        </div>
+                        <div className={styles.upcomingEvents}>
+                            <h3 className={`text-white px-2`}>Movie night</h3>
+                        </div>
+                        <div className={styles.upcomingEvents}>
+                            <h3 className={`text-white px-2`}>ML Workshop series</h3>
+                        </div>
+                        <div className={styles.upcomingEvents}>
+                            <h3 className={`text-white px-2`}>A working rocket model(Project)</h3>
+                        </div>
+                        <div className={styles.upcomingEvents}>
+                            <h3 className={`text-white px-2`}>StarGazing (For some special events)</h3>
+                        </div>
+
+
+                    </div>
+
+                    {/* <div className={`${styles.activityContainer} `}>
+                        <h2>Movie night</h2>
+
+                        <p>Stay tuned</p>
+
+                    </div> */}
+
+                    {/* <div className={`${styles.activityContainer}`}>
+                        <h2>Event 6</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde qui fugiat sapiente, iste adipisci architecto eius quidem cumque officia optio dolorum. Nemo vel optio voluptas maiores hic quasi, minus distinctio!</p>
+
+                    </div> */}
+
+                </div>
 
             </div>
-
-
-            <div className={styles.activityContainer}>
-                {/* <img className={styles.menuButton} src="https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-ellipsis.svg" alt="menu"/> */}
-                    <h2>Event 2</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga incidunt magni, error, id nesciunt exercitationem nihil molestiae optio facilis libero a odio eaque adipisci, perferendis consequatur quos dolore reiciendis!</p>
-                    <span>dd/mm/yyyy</span>
-
-            </div>
-            <div className={styles.activityContainer}>
-                {/* <img className={styles.menuButton} src="https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-ellipsis.svg" alt="menu"/> */}
-                    <h2>Event 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde qui fugiat sapiente, iste adipisci architecto eius quidem cumque officia optio dolorum. Nemo vel optio voluptas maiores hic quasi, minus distinctio!</p>
-                    <span>dd/mm/yyyy</span>
-
-            </div>
-            {/* <div className={styles.activityContainer}>
-                
-                <img className={styles.menuButton} src="https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-ellipsis.svg" alt="menu"/>
-                    <h2>1hr</h2>
-                    <p>Previous - 1hr</p>
-            </div>
-            <div className={styles.activityContainer}>
-                <span>Social</span>
-                <img className={styles.menuButton} src="https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-ellipsis.svg" alt="menu"/>
-                    <h2>1hr</h2>
-                    <p>Previous - 3hrs</p>
-            </div>
-            <div className={styles.activityContainer}>
-                <span>Self Care</span>
-                <img className={styles.menuButton} src="https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-ellipsis.svg" alt="menu"/>
-                    <h2>0hrs</h2>
-                    <p>Previous - 1hr</p>
-            </div> */}
         </main>
     </>
     )

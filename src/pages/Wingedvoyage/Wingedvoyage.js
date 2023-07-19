@@ -52,7 +52,7 @@ export default function Wingedvoyage(params) {
                     here and create variety of products
                 </span>
                 <br></br>
-                <div className='flex w-engines'>
+                <div className='flex1 w-engines'>
                 <div className="w-stat">
                                <span className='w-count'>
                                  <CountUp start={80} end={120} duration={3}/>

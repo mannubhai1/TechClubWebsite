@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./GaganVedhiComponents.module.css";
 import Activities from "./Activities";
+import { motion } from "framer-motion";
 
 function GaganVedhiComponents() {
   const email = "astronomyclub@iittp.ac.in";
@@ -89,11 +90,12 @@ function GaganVedhiComponents() {
           <div className={`${styles.titleContainer} ${styles.aboutcontainer}`}>
             <div className={styles.titleWords}>
               <div className={styles.title1}>
-                <h1 className={`${styles.title2} ${styles.aboutUS}`}>About us</h1>
+                <h1 className={`${styles.title2} ${styles.aboutUS}`}>
+                About Us</h1>
               </div>
             </div>
           </div>
-          <div className={`${styles.aboutcont} flex flex-row justify-around content-around`}>
+          <div className={`${styles.aboutcont} flex flex-row justify-around content-around gap-8`}>
             {/* <div className=" col-md-5 md:m-5 md:rounded-3xl md:border-2 border-cyan-500 overflow-auto bg-white"> */}
             <div className="flex flex-col md:ml-[10vh] md:rounded-3xl md:border-2 max-w-2xl border-cyan-500 w-1/2 overflow-auto bg-white">
               <h2 className="flex flex-col justify-center m-auto font-bold py-3 justify-self-center">History</h2>
@@ -112,7 +114,7 @@ function GaganVedhiComponents() {
               </p>
             </div>
             <div className="flex flex-col w-1/2 md:mr-[10vh] md:rounded-3xl md:border-2 border-cyan-500 overflow-auto bg-white">
-              <h2 className="color-yellow font-bold m-auto md:py-3">Motivation</h2>
+              <h2 className="color-yellow font-bold mt-2 md:py-3">Motivation</h2>
               <p className="text-black text-left font-bold italic px-12 py-8 tracking-widest md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
@@ -137,7 +139,7 @@ function GaganVedhiComponents() {
               <div className={`${styles.title1} ${styles.achievetitle1}`}>
                 <h1 className={`${styles.title2} ${styles.achieve}`}>
                   {" "}
-                  Achievements and Activities
+                  Achievements
                 </h1>
               </div>
             </div>
@@ -154,9 +156,18 @@ function GaganVedhiComponents() {
               <section>
                 <i className={`${styles.icon} fas fa-home`}></i>
                 <div className={styles.details}>
-                  <span className={styles.Title}>
-                    Shaastra- Cosmic Innovation Challenge{" "}
-                  </span>
+
+                  <motion.h2
+                  className={styles.Title}
+                  style={{color: 'black'}}
+                    initial={{x: "-3rem",opacity:0}}
+                    whileInView={{x:0,opacity:1}}
+                    transition={{
+                        duration: 2,
+                        type: "spring"
+                    }}
+                    >Shaastra- Cosmic Innovation Challenge</motion.h2>
+                    {" "}
                 </div>
                 <p>
                   Second Prize by Team of Arpit and Manas among 163
@@ -173,14 +184,21 @@ function GaganVedhiComponents() {
               </section>
             </div>
 
-            <div className={`${styles.Row} ${styles.Row_2}`}>
+            {/* <div className={`${styles.Row} ${styles.Row_2}`}>
               <section>
                 <i className={`${styles.icon} hover:animate-spin fas fa-star`}></i>
 
                 <div className={styles.details}>
-                  <span className={styles.Title}>
-                    Regional Science Centre Trip{" "}
-                  </span>
+                  <motion.h2
+                  className={styles.Title}
+                  style={{color: 'black'}}
+                    initial={{x: "+3rem",opacity:0}}
+                    whileInView={{x:0,opacity:1}}
+                    transition={{
+                        duration: 2,
+                        type: "spring"
+                    }}
+                    >Regional Science Centre Trip</motion.h2>
                 </div>
                 <p>
                   A three-hour trip to RSC of Tirupati for a sky-gazing session
@@ -193,13 +211,22 @@ function GaganVedhiComponents() {
                   <i>- GaganVedhi</i>
                 </div>
               </section>
-            </div>
+            </div> */}
 
-            <div className={`${styles.Row} ${styles.Row_1}`}>
+            {/* <div className={`${styles.Row} ${styles.Row_1}`}>
               <section>
                 <i className={`${styles.icon} hover:animate-spin fas fa-paper-plane`}></i>
                 <div className={styles.details}>
-                  <span className={styles.Title}>Athereum</span>
+                  <motion.h2
+                  className={styles.Title}
+                  style={{color: 'black'}}
+                    initial={{x: "-3rem",opacity:0}}
+                    whileInView={{x:0,opacity:1}}
+                    transition={{
+                        duration: 2,
+                        type: "spring"
+                    }}
+                    >Athereum</motion.h2>
                 </div>
                 <p>
                   A Joint fest organized by Astronomy Clubs of IIT and IISER
@@ -213,13 +240,22 @@ function GaganVedhiComponents() {
                   <i>- GaganVedhi</i>
                 </div>
               </section>
-            </div>
+            </div> */}
 
-            <div className={`${styles.Row} ${styles.Row_2}`}>
+            {/* <div className={`${styles.Row} ${styles.Row_2}`}>
               <section>
                 <i className={`${styles.icon} hover:animate-spin fas fa-solid fa-rocket`}></i>
                 <div className={styles.details}>
-                  <span className={styles.Title}>LIGO Workshop </span>
+                  <motion.h2
+                  className={styles.Title}
+                  style={{color: 'black'}}
+                    initial={{x: "+3rem",opacity:0}}
+                    whileInView={{x:0,opacity:1}}
+                    transition={{
+                        duration: 2,
+                        type: "spring"
+                    }}
+                    >LIGO Workshop </motion.h2>
                 </div>
                 <p>
                   A two-day Offline workshop on Gravitational Waves Detection by
@@ -235,7 +271,7 @@ function GaganVedhiComponents() {
                   <i>- GaganVedhi</i>
                 </div>
               </section>
-            </div>
+            </div> */}
           </div>
           <br />
 
@@ -343,8 +379,8 @@ function GaganVedhiComponents() {
                   >
                     <path
                       d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                 </a>
