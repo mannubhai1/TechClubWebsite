@@ -7,6 +7,7 @@ import { FiPhone } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
+import Preplans from './plans/Preplans';
 
 export default function Digital(params) {
     return(
@@ -77,6 +78,9 @@ export default function Digital(params) {
            <br></br>
            <br></br>
            <br></br>
+           <Preplans/>
+           <br></br>
+           <br></br>
            <br></br>
            <br></br>
            <div className='w-flexcolumn'>
@@ -133,6 +137,7 @@ export default function Digital(params) {
            </div>
            <br></br>
            <br></br>
+           
         </section>
     )
 };
