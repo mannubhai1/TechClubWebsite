@@ -1,0 +1,69 @@
+.wplancard{
+    display:flex;
+    gap:3rem;
+    justify-content: center;
+    color: aliceblue;
+    scale: 1.15;
+}
+.wlists{
+    background:  linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%);;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    gap:1rem;
+    padding: 30px 40px 75px 40px;
+    width: 14rem;
+    min-width: 14rem;
+    cursor: pointer;
+}
+.wlists button{
+     padding: 15px 20px;
+    color: #9c9c9c;
+    border-color: none;
+    
+}
+.wfeatures{
+    height:7rem;
+}
+.wfeature>img{
+    width:1rem;
+    height:1rem
+}
+.wplan>:nth-child(1){
+    width:2rem;
+    height: 2rem;
+    fill: white;
+}
+/* .plancard>:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plancard>:nth-child(2)>.plan>:nth-child(1){
+    fill:white;
+}
+.plancard>:nth-child(2)>button{
+    color: orange;
+    border-color: orange;
+} */
+.wgrad{
+    display: flex;
+    justify-content: space-between;
+   
+    gap:2rem;
+}
+.wgrad1{
+    position: relative;
+    flex: 2;
+}
+.wgrad2{
+    position: relative;
+   flex:1;
+}
+
+@media(max-width:800px){
+    .wplancard{
+        flex-direction: column;
+        align-items: center;
+        gap:4rem;
+    }
+}
