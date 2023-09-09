@@ -18,7 +18,7 @@ import { FiPhone } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
-
+import Wprevplans from './Plans/Wprevplans';
 
 export default function Wingedvoyage(params) {
   const [className,setClassName] = useState(null)
@@ -52,7 +52,7 @@ export default function Wingedvoyage(params) {
                     here and create variety of products
                 </span>
                 <br></br>
-                <div className='flex1 w-engines'>
+                <div className='flex w-engines'>
                 <div className="w-stat">
                                <span className='w-count'>
                                  <CountUp start={80} end={120} duration={3}/>
@@ -149,6 +149,12 @@ export default function Wingedvoyage(params) {
              </div>
            </div>
           
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <Wprevplans/>
+           <br></br>
            <br></br>
            <br></br>
            <br></br>
