@@ -146,15 +146,13 @@
 }
 
 .TechIG {
-    margin-top: 2vh;
-    background-image: linear-gradient(to bottom, #87cefa 0%, #b2ebf2 50%, #87cefa 100%);
+    margin-top: 5vh;
 }
 
 .igs{
     margin-top: 6vh;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0 0 0 0;
@@ -169,8 +167,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 30vw;
-    max-width: 30vw;
+    min-width: 22vw;
+    max-width: 22vw;
+    max-height: 35vh;
+    min-height: 35vh;
     background-color: rgb(187, 223, 238);
     border: solid 3px gold;
 }
@@ -180,38 +180,34 @@
     cursor: pointer;
 }
 
-.electronicsClicked,
-.arduinoClicked,
-.dronesClicked,
-.roboticsClicked {
-    margin-bottom: 1.5vh;
-    padding-top: 2vh;
-    margin-left: 1.5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 50vw;
-    max-width: 50vw;
-    background-color: rgb(187, 223, 238);
-    border: solid 3px gold;
-    font-weight: 500;
-}
-
-.electronicsClicked:hover,
-.arduinoClicked:hover,
-.dronesClicked:hover,
-.roboticsClicked:hover {
-    background-color: rgb(211, 232, 241);
-    cursor: pointer;
-}
-
-.electronics,
-.arduino,
-.drones,
+.electronics p,
+.arduino p,
+.drones p,
 .robotics p{
     font-weight: 600;
-    font-size: large;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .ig-title {
+        font-weight: 600;
+        font-size: 11px
+    }
+
+    .igs{
+        flex-direction: column;
+    }
+
+    .electronics,
+    .arduino,
+    .drones,
+    .robotics{
+            max-height: 30vh;
+            min-height: 30vh;
+            max-width: 50vw;
+            min-width: 50vw;
+        }
 }
 
 @media (max-width: 420px) {
@@ -232,28 +228,6 @@
 
 .electronicspic, .arduinopic, .dronespic, .roboticspic {
     height: 17vh;
-}
-
-.show {
-    display: block;
-    border: 1px solid black;
-    background-color: rgb(247, 245, 241);
-    font-weight: 300;
-    padding: 0 0 0 0;
-    min-width: 50vw;
-    max-width: 50vw;
-    max-height: 25vh;
-    overflow-y: scroll;
-}
-
-@media (max-width: 420px) {
-    .show {
-        font-size: 10px;
-    }
-}
-
-.hide {
-    display: none;
 }
 
 .TechFooter {
