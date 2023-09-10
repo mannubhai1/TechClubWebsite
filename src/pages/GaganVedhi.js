@@ -1,5 +1,5 @@
 import React from 'react'
-import GaganVedhiComponents from './GagdnVedhiComponents/GaganVedhiComponents'
+import GaganVedhiComponents from './GaganVedhiComponents/GaganVedhiComponents'
 
 const GaganVedhi = () => {
   return (

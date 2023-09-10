@@ -2,13 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-}
 .big {
   background-image: url(/public/gv_image/home-background.png);
   z-index: -100;
@@ -42,10 +35,12 @@ html {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
+    font-family: "Raleway", sans-serif;
   }
   
   .subTitle span{
     color: #0ef;
+    font-family: "Raleway", sans-serif;
   }
 
   /* .descriptionContainer{
@@ -131,6 +126,7 @@ h1.title2 {
   display: flex;
   flex-shrink: inherit;
   text-transform: uppercase;
+  
 }
 
 .title1 {
@@ -146,6 +142,7 @@ h1.title2 {
     #000000 100%
   );
   background-color: #000000;
+  
 }
 
 /* the image that appears in the background of block */
@@ -371,6 +368,7 @@ h1.title2 {
   max-height: 450px;
   object-fit: contain;
   word-wrap: break-word;
+  font-family: "Raleway", sans-serif;
 }
 
 .content {
@@ -379,6 +377,14 @@ h1.title2 {
 
 .aboutcont > div {
   box-shadow: 0 0 6.56vh 1.97vh #48abe0;
+}
+
+.aboutcont div p {
+  font-size: 19.3px;
+  padding: 3vh;
+  border-radius: 10px;
+  font-weight: inherit;
+  font-family: "Raleway", sans-serif;
 }
 
 .Row section {
@@ -1184,12 +1190,13 @@ h1.title2 {
     margin: 3vh 3vh;
     word-wrap: break-word;
   }
-  .aboutc .aboutcont p {
+  .aboutc .aboutcont div p {
     font-size: 13.3px;
     margin: auto 10px;
     padding: 2vh;
     border-radius: 10px;
     object-fit: contain;
+    font-family: "Raleway", sans-serif;
   }
 
   .aboutc .aboutcont h2 {

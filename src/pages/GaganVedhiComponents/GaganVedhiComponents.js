@@ -59,7 +59,7 @@ function GaganVedhiComponents() {             //constants for links
               </div>
             </div>
 
-            <p className="italic text-black object-contain rounded`-2xl font-medium bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16 ">
+            <p className="italic text-black object-contain rounded-2xl font-medium bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16 ">
               Exploring the vast expanse of the universe and uncovering its
               secrets is a thrilling experience right?, and it becomes even more
               exciting when shared with like-minded individuals. That's what
@@ -102,7 +102,7 @@ function GaganVedhiComponents() {             //constants for links
           <div className={`${styles.aboutcont} flex flex-row justify-around content-around gap-8`}>
             <div className="flex flex-col md:ml-[10vh] md:rounded-3xl md:border-2 max-w-2xl border-cyan-500 w-1/2 overflow-auto bg-white">
               <h2 className="flex flex-col justify-center m-auto font-bold py-3 justify-self-center">History</h2>
-              <p className=" text-black italic font-medium md:text-lg bold text-left md:px-8 md:py-3 overflow-auto md:tracking-wide color-white">
+              <p className=" text-black  font-medium md:text-lg bold text-left md:px-8 md:py-3 overflow-auto md:tracking-wide color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
                 club was founded 6 years ago by Anup Kulkarni with the name
@@ -118,7 +118,7 @@ function GaganVedhiComponents() {             //constants for links
             </div>
             <div className="flex flex-col w-1/2 md:mr-[10vh] md:rounded-3xl md:border-2 border-cyan-500 overflow-auto bg-white">
               <h2 className="color-yellow font-bold mt-2 md:py-3">Motivation</h2>
-              <p className="text-black text-left font-medium italic px-12 py-8 tracking-widest md:text-xl">
+              <p className="text-black text-left font-medium px-12 py-8 tracking-widest md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
                 The Club Aims to establish a strong community of Astrophiles to

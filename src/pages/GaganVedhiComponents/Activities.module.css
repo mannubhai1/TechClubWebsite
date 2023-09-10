@@ -1,18 +1,11 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
+#mainCard div h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   margin-bottom: 20%;
   padding: 10px;
-  color: antiquewhite;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
 }
 
 main {
@@ -45,11 +38,13 @@ main {
 
 #profilePic h1 {
   color: antiquewhite;
+  font-family: "Raleway", sans-serif;
 }
 
-p {
+.activityContainer p {
   font-size: 0.8em;
   font-weight: 100;
+  font-family: "Raleway", sans-serif;
 }
 
 fieldset {
@@ -158,6 +153,7 @@ fieldset {
   padding: 10px;
   z-index: 1020;
   overflow: auto;
+  font-family: "Raleway", sans-serif;
 }
 
 .activityContainer span {
@@ -165,6 +161,7 @@ fieldset {
   position: relative;
   z-index: 1020;
   font-weight: 600;
+  font-family: "Raleway", sans-serif;
 }
 
 .eventheading {
@@ -261,7 +258,7 @@ fieldset {
     align-self: center;
   }
 
-  h1 {
+  #mainCard div h1  {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 0;
