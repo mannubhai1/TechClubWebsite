@@ -6,6 +6,7 @@ import ClubHead from './ClubHead/ClubHead'
 import Footer from './Footer/Footer'
 import Achievements from './Achievements/Achievements'
 import './Ecell.css'
+import UpcomingEvents from './UpcomingEvents/UpcomingEvents'
 
 const Ecell = () => {
   return (
@@ -15,6 +16,7 @@ const Ecell = () => {
         <Banner />
         <Programs />
         <Slider />
+        <UpcomingEvents />
         <Achievements />
         <ClubHead />
         <Footer />
