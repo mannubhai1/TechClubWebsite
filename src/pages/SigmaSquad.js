@@ -1,6 +1,7 @@
 import React from 'react'
 import SigmaSquadAbout from './SigmaSquadComponents/SigmaSqaudAbout'
 import './SigmaSquadComponents/SigmaSquad.css'
+import FutureEvents from './SigmaSquadComponents/FutureEvents'
 import SigmaSquadTeam from './SigmaSquadComponents/SigmaSquadTeam'
 import SigmaSquadFooter from './SigmaSquadComponents/SigmaSquadFooter'
 import SigmaSquadTitle from './SigmaSquadComponents/SigmaSquadTitle'
@@ -24,6 +25,7 @@ const SigmaSquad = () => {
           paddingBottom: '1.5vh'
         }}
       />
+      <FutureEvents />
       <SigmaSquadObj />
       <SigmaSquadTeam />
       <SigmaSquadFooter />

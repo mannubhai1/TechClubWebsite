@@ -6,6 +6,7 @@ import TechmaniacsFooter from './TechmaniacsComponents/TechmaniacsFooter'
 import TechmaniacsTitle from './TechmaniacsComponents/TechmaniacsTitle'
 import TechmaniacsIG from './TechmaniacsComponents/TechmaniacsInterestGroups'
 import Plans from './TechmaniacsComponents/Plans'
+import TechmaniacsFuture from './TechmaniacsComponents/TechmaniacsFuture'
 import techmeetPic from './TechmaniacsComponents/TechMeet_11_Chirag_Team.jpg'
 
 const Techmaniacs = () => {
@@ -26,6 +27,7 @@ const Techmaniacs = () => {
       />
       <TechmaniacsIG />
       <Plans />
+      <TechmaniacsFuture />
       <TechmaniacsTeam />
       <TechmaniacsFooter />
     </div>
