@@ -26,8 +26,8 @@ const Techmaniacs = () => {
           alt='Tech Meet 11.0'
       />
       <TechmaniacsIG />
-      <Plans />
       <TechmaniacsFuture />
+      <Plans />
       <TechmaniacsTeam />
       <TechmaniacsFooter />
     </div>

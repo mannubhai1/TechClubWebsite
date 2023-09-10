@@ -5,11 +5,11 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { motion } from 'framer-motion'
 
-const FutureEvents = () => {
+const SigmaSquadPast = () => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        setImages([logo]);
+        setImages([logo, session]);
     }, []);
 
     useEffect(() => {
@@ -60,7 +60,7 @@ const FutureEvents = () => {
                 padding: "2rem",
                 height: '90%',
                 marginBottom: '',
-                backgroundImage: 'linear-gradient(to bottom, #87cefa 0%, #b2ebf2 50%, #87cefa 100%)'
+                backgroundImage: 'linear-gradient(to right, blue, red)'
             }}
         >
             <motion.span
@@ -74,7 +74,7 @@ const FutureEvents = () => {
                 style={{
                     fontWeight: "bold",
                     fontSize: "3.2rem",
-                    color: 'black',
+                    color: 'whitesmoke',
                     marginBottom: "0.5rem",
                 }}
             >
@@ -90,7 +90,7 @@ const FutureEvents = () => {
                 className="stroke-text2"
                 style={{
                     fontWeight: "bold",
-                    color: 'black',
+                    color: 'whitesmoke',
                     fontSize: "3.1rem",
                     fontStyle: 'italic',
                     letterSpacing: '2px'
@@ -117,4 +117,4 @@ const FutureEvents = () => {
     );
 };
 
-export default FutureEvents;
+export default SigmaSquadPast;
