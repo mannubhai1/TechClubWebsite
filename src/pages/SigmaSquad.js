@@ -5,6 +5,8 @@ import SigmaSquadTeam from './SigmaSquadComponents/SigmaSquadTeam'
 import SigmaSquadFooter from './SigmaSquadComponents/SigmaSquadFooter'
 import SigmaSquadTitle from './SigmaSquadComponents/SigmaSquadTitle'
 import SigmaSquadObj from './SigmaSquadComponents/SigmaSqaudObj'
+import SigmaSquadPast from './SigmaSquadComponents/SigmaSquadPast'
+import SigmaSquadFuture from './SigmaSquadComponents/SigmaSquadFuture'
 import sspic from './SigmaSquadComponents/Digital_Wizards_workshop_on_REACT_1.jpg'
 
 const SigmaSquad = () => {
@@ -24,7 +26,9 @@ const SigmaSquad = () => {
           paddingBottom: '1.5vh'
         }}
       />
+      <SigmaSquadFuture />
       <SigmaSquadObj />
+      <SigmaSquadPast />
       <SigmaSquadTeam />
       <SigmaSquadFooter />
     </div>
