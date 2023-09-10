@@ -24,26 +24,26 @@ html {
 }
 
 /* Testing in description part */
-  /* /* #descriptionServices{
+/* /* #descriptionServices{
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
   } */
 
-  .subTitle{
-    text-align: center;
-    font-size: 60px;
-    padding-bottom: 70px;
-    font-family: "Raleway", sans-serif;
-  }
-  
-  .subTitle span{
-    color: #0ef;
-    font-family: "Raleway", sans-serif;
-  }
+.subTitle {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  font-family: "Raleway", sans-serif;
+}
 
-  /* .descriptionContainer{
+.subTitle span {
+  color: #0ef;
+  font-family: "Raleway", sans-serif;
+}
+
+/* .descriptionContainer{
     padding: 90px;
   }
 
@@ -86,7 +86,6 @@ html {
     font-size: 15px;
   }  */
 
-
 /* testing ends */
 
 /* About us */
@@ -126,7 +125,6 @@ h1.title2 {
   display: flex;
   flex-shrink: inherit;
   text-transform: uppercase;
-  
 }
 
 .title1 {
@@ -142,7 +140,6 @@ h1.title2 {
     #000000 100%
   );
   background-color: #000000;
-  
 }
 
 /* the image that appears in the background of block */
@@ -399,62 +396,6 @@ h1.title2 {
   max-width: 100%;
 }
 
-.ribbon {
-  background: #2d5699;
-  color: #fff;
-  padding: 18px;
-  text-align: center;
-  margin-left: -1.35vw;
-  margin-right: -1.35vw;
-  position: relative;
-}
-
-.ribbon:before,
-.ribbon:after {
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  content: "";
-  top: 100%;
-}
-
-.ribbon.redGradient {
-  background: rgb(234, 67, 53); /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    rgba(234, 67, 53, 1) 0%,
-    rgba(178, 0, 0, 1) 100%,
-    rgba(125, 185, 232, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    rgba(234, 67, 53, 1) 0%,
-    rgba(178, 0, 0, 1) 100%,
-    rgba(125, 185, 232, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    rgba(234, 67, 53, 1) 0%,
-    rgba(178, 0, 0, 1) 100%,
-    rgba(125, 185, 232, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4335', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-}
-.ribbon.redGradient:before {
-  border-top: 2.625vh solid #861f1a;
-  border-left: 1.35vw solid transparent;
-  left: 0;
-}
-.ribbon.redGradient:after {
-  border-top: 2.625vh solid #861f1a;
-  border-right: 1.35vw solid transparent;
-  left: calc(100% - 20px);
-}
-
 .container {
   position: relative;
   display: flex;
@@ -482,6 +423,7 @@ h1.title2 {
 
 .container .card:hover {
   height: 52.5vh;
+  cursor: pointer;
 }
 
 .container .card .imgBx {
@@ -1250,7 +1192,7 @@ h1.title2 {
     position: relative;
   }
 
-  .container .card {
+  .container {
     width: 35vw;
     height: 45vh;
   }

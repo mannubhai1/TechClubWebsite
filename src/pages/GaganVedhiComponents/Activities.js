@@ -9,12 +9,13 @@ const Activities = () => {
   var hidden2;
 
   useEffect(() => {
-    hidden1 = document.querySelector(".recent");        // to get the element with class name 'recent'
-    hidden2 = document.querySelector(".upcoming");      // to get the element with class name 'upcoming'
+    hidden1 = document.querySelector(".recent"); // to get the element with class name 'recent'
+    hidden2 = document.querySelector(".upcoming"); // to get the element with class name 'upcoming'
   }, []);
 
   const handleClick1 = () => {
-    if (hidden1 !== null && hidden1.classList.contains("hidden")) {       // to check if the element is hidden or not
+    if (hidden1 !== null && hidden1.classList.contains("hidden")) {
+      // to check if the element is hidden or not
       hidden1.classList.remove("hidden");
       hidden1.classList.add("flex");
       hidden2.classList.remove("flex");
@@ -22,7 +23,8 @@ const Activities = () => {
     }
   };
   const handleClick2 = () => {
-    if (hidden2 !== null && hidden2.classList.contains("hidden")) {       // to check if the element is hidden or not
+    if (hidden2 !== null && hidden2.classList.contains("hidden")) {
+      // to check if the element is hidden or not
       hidden2.classList.remove("hidden");
       hidden2.classList.add("flex");
       hidden1.classList.remove("flex");
@@ -47,7 +49,7 @@ const Activities = () => {
                   className={`px-[4.8vh] py-4 font-sans text-xl font-bold `}
                 >
                   {" "}
-                  <h3 className={styles.eventheading}>Recent Events</h3>
+                  <h3 className={styles.eventheading}>RECENT EVENTS</h3>
                 </button>
               </div>
               <div className={styles.eventDiv}>
@@ -55,7 +57,7 @@ const Activities = () => {
                   onClick={handleClick2}
                   className={`px-5 py-4 m-auto font-sans text-xl font-bold`}
                 >
-                  <h3 className={styles.eventheading}>Upcoming Events</h3>
+                  <h3 className={styles.eventheading}>UPCOMING EVENTS</h3>
                 </button>
               </div>
             </div>
@@ -63,8 +65,7 @@ const Activities = () => {
         </section>
         <div className="flex flex-col gap-8 ml-8 w-[72vw]">
           <div className={`recent flex flex-row gap-4 ${styles.eventView}`}>
-            {" "}
-                                                                              {/* to display recent events */}
+            {/* to display recent events */}
             <div className={`${styles.activityContainer}`}>
               <h2>Regional Science Centre Trip</h2>
 
@@ -93,7 +94,7 @@ const Activities = () => {
 
           <div className={`upcoming hidden flex-row gap-4 ${styles.eventView}`}>
             {" "}
-                                                                                      {/* to display upcoming events */}
+            {/* to display upcoming events */}
             <div className={`${styles.activityContainer2}`}>
               <div className={styles.upcomingEvents}>
                 <h3 className={`text-white px-2`}>Documentary cum quiz 3.0</h3>

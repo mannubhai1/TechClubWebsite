@@ -3,22 +3,19 @@ import styles from "./GaganVedhiComponents.module.css";
 import Activities from "./Activities";
 import { motion } from "framer-motion";
 
-function GaganVedhiComponents() {             //constants for links
+function GaganVedhiComponents() {
+  //constants for links
   const email = "astronomyclub@iittp.ac.in";
   const discord = "https://discord.com/invite/7nqZBQX9";
   const linkedin = "https://www.linkedin.com/in/gagan-vedhi-iitt-129314244/";
   const instagram = "https://www.instagram.com/astroclubiitt/";
   const github = "https://github.com/astroclubiitt";
-  const facebook = "https://www.facebook.com/Gagan-Vedhi-114387885028659/?ref=page_internal";
+  const facebook =
+    "https://www.facebook.com/Gagan-Vedhi-114387885028659/?ref=page_internal";
 
   return (
     <>
-
-
       {/* Header */}
-
-
-      
 
       <div className={`${styles.big}`}>
         <div className={`bg-black ${styles.starsContainer}`}>
@@ -37,23 +34,17 @@ function GaganVedhiComponents() {             //constants for links
           <div id={styles.stars3}></div>
         </div>
 
-
-
-
-
         {/* Description */}
-
-
-
 
         <div className={styles.desc}>
           <div className={`${styles.box}`}>
-
-            <div className={`${styles.titleContainer} ${styles.gazingcontainer}`}>
+            <div
+              className={`${styles.titleContainer} ${styles.gazingcontainer}`}
+            >
               <div className={styles.titleWords}>
                 <div className={`${styles.title1} ${styles.gazingtitle1}`}>
                   <h1 className={`${styles.title2} ${styles.gazing}`}>
-                    Gazing beyond our world with Gagan Vedhi 
+                    Gazing beyond our world with Gagan Vedhi
                   </h1>
                 </div>
               </div>
@@ -71,37 +62,32 @@ function GaganVedhiComponents() {             //constants for links
               we also conduct technical events on computational astronomy which
               provides an opportunity for students to deepen their understanding
               and skills in the field. Join us on our journey as we gaze up at
-              the stars and uncover the secrets of the cosmos.{" "}
+              the stars and uncover the secrets of the cosmos.
             </p>
           </div>
         </div>
         <br />
         <br />
 
-
-
-
-
-        
-
         {/* About Us */}
-
-
-
-
 
         <div className={`about-col ${styles.aboutc}`}>
           <div className={`${styles.titleContainer} ${styles.aboutcontainer}`}>
             <div className={styles.titleWords}>
               <div className={styles.title1}>
                 <h1 className={`${styles.title2} ${styles.aboutUS}`}>
-                About Us</h1>
+                  About Us
+                </h1>
               </div>
             </div>
           </div>
-          <div className={`${styles.aboutcont} flex flex-row justify-around content-around gap-8`}>
+          <div
+            className={`${styles.aboutcont} flex flex-row justify-around content-around gap-8`}
+          >
             <div className="flex flex-col md:ml-[10vh] md:rounded-3xl md:border-2 max-w-2xl border-cyan-500 w-1/2 overflow-auto bg-white">
-              <h2 className="flex flex-col justify-center m-auto font-bold py-3 justify-self-center">History</h2>
+              <h2 className="flex flex-col justify-center m-auto font-bold py-3 justify-self-center">
+                History
+              </h2>
               <p className=" text-black  font-medium md:text-lg bold text-left md:px-8 md:py-3 overflow-auto md:tracking-wide color-white">
                 Gagan Vedhi, is a community of astronomy enthusiasts who are
                 passionate about exploring the mysteries of the universe. The
@@ -117,7 +103,9 @@ function GaganVedhiComponents() {             //constants for links
               </p>
             </div>
             <div className="flex flex-col w-1/2 md:mr-[10vh] md:rounded-3xl md:border-2 border-cyan-500 overflow-auto bg-white">
-              <h2 className="color-yellow font-bold mt-2 md:py-3">Motivation</h2>
+              <h2 className="color-yellow font-bold mt-2 md:py-3">
+                Motivation
+              </h2>
               <p className="text-black text-left font-medium px-12 py-8 tracking-widest md:text-xl">
                 The club's motivation is to create a platform for students where
                 they can come together to explore the mysteries of the universe.
@@ -128,16 +116,11 @@ function GaganVedhiComponents() {             //constants for links
           </div>
           <br />
 
-
-
-
-
           {/* Achievements and Activities*/}
 
-
-
-
-          <div className={`${styles.titleContainer} ${styles.achievecontainer}`}>
+          <div
+            className={`${styles.titleContainer} ${styles.achievecontainer}`}
+          >
             <div className={styles.titleWords}>
               <div className={`${styles.title1} ${styles.achievetitle1}`}>
                 <h1 className={`${styles.title2} ${styles.achieve}`}>
@@ -159,18 +142,18 @@ function GaganVedhiComponents() {             //constants for links
               <section>
                 <i className={`${styles.icon} fas fa-home`}></i>
                 <div className={styles.details}>
-
                   <motion.h2
-                  className={styles.Title}
-                  style={{color: 'black'}}
-                    initial={{x: "-3rem",opacity:0}}
-                    whileInView={{x:0,opacity:1}}
+                    className={styles.Title}
+                    style={{ color: "black" }}
+                    initial={{ x: "-3rem", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
                     transition={{
-                        duration: 2,
-                        type: "spring"
+                      duration: 2,
+                      type: "spring",
                     }}
-                    >Shaastra- Cosmic Innovation Challenge</motion.h2>
-                    {" "}
+                  >
+                    Shaastra- Cosmic Innovation Challenge
+                  </motion.h2>{" "}
                 </div>
                 <p>
                   Second Prize by Team of Arpit and Manas among 163
@@ -178,7 +161,7 @@ function GaganVedhiComponents() {             //constants for links
                   worth Rs. 10,000/- .
                 </p>
                 <div className={styles.bottom}>
-                  <a href="!#" alt="" style={{pointerEvents: 'none'}}>
+                  <a href="!#" alt="" style={{ pointerEvents: "none" }}>
                     {" "}
                     Read more
                   </a>
@@ -278,24 +261,14 @@ function GaganVedhiComponents() {             //constants for links
           </div>
           <br />
 
-
-
-
-          <Activities/> 
-
-
-
-
+          <Activities />
 
           {/* Team */}
 
-
-
-
-
-
           <div className={styles.main}>
-            <div className={`${styles.titleContainer} ${styles.aboutcontainer}`}>
+            <div
+              className={`${styles.titleContainer} ${styles.aboutcontainer}`}
+            >
               <div className={styles.titleWords}>
                 <div className={styles.title1}>
                   <h1 className={`${styles.title2} ${styles.clubHead}`}>
@@ -336,14 +309,7 @@ function GaganVedhiComponents() {             //constants for links
 
           <br />
 
-
-
-
           {/* Footer */}
-
-
-
-
 
           <footer className="bg-slate-950 text-center text-white dark:bg-neutral-300">
             <div className="container md:pt-9 ">
@@ -435,19 +401,16 @@ function GaganVedhiComponents() {             //constants for links
               </div>
             </div>
 
-
-
             {/* <!--Copyright section--> */}
 
-
-
             <div className="bg-black p-4 text-center text-neutral-8 00 dark:bg-neutral-700 dark:text-neutral-200">
-              © 2023 Copyright: 
+              © 2023 Copyright:
               <a
                 className="text-neutral-600 dark:text-neutral-400"
-                href="/" style= {{pointerEvents: 'none'}}
+                href="/"
+                style={{ pointerEvents: "none" }}
               >
-                <span>  Gagan Vedhi </span>
+                <span> Gagan Vedhi </span>
               </a>
             </div>
           </footer>

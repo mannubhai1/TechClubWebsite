@@ -156,17 +156,9 @@ fieldset {
   font-family: "Raleway", sans-serif;
 }
 
-.activityContainer span {
-  color: rgb(47, 113, 135);
-  position: relative;
-  z-index: 1020;
-  font-weight: 600;
-  font-family: "Raleway", sans-serif;
-}
-
 .eventheading {
   color: yellow;
-  font-size: 2.2vh;
+  font-size: 2.1vh;
   font-weight: 600;
   margin: auto;
 }
@@ -178,13 +170,14 @@ fieldset {
 .activityContainer:nth-child(3)::before {
   background-image: url("https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-play.svg");
   background-color: #56c2e6;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 .activityContainer:nth-child(2)::before {
-  background-image: url("https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-self-care.svg");
-  background-color: #f1c75a;
-  z-index: 1000;
+  /* background-image: url("https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-self-care.svg"); */
+  background-image: url("https://github.com/iMJ007/Time-Tracking-Dashboard/raw/main/images/icon-play.svg");
+  background-color: rgb(33, 205, 188);
+  /* z-index: 1000; */
 }
 
 .attribution {
@@ -258,7 +251,7 @@ fieldset {
     align-self: center;
   }
 
-  #mainCard div h1  {
+  #mainCard div h1 {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 0;
@@ -282,11 +275,8 @@ fieldset {
   .activityContainer p {
     overflow: auto;
     margin: 5px;
+    color: mintcream;
     font-size: 2vh;
-  }
-  .activityContainer span {
-    margin: 10px;
-    align-self: flex-end;
   }
 
   .activityContainer2 .upcomingEvents {
