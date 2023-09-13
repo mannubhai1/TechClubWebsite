@@ -23,14 +23,6 @@ html {
   overflow-x: hidden;
 }
 
-/* Testing in description part */
-/* /* #descriptionServices{
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-  } */
-
 .subTitle {
   text-align: center;
   font-size: 60px;
@@ -42,51 +34,6 @@ html {
   color: #0ef;
   font-family: "Raleway", sans-serif;
 }
-
-/* .descriptionContainer{
-    padding: 90px;
-  }
-
-  .servicesList{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-  }
-
-  .servicesList div{
-    background-color: white;
-    padding: 40px;
-    height: 400px;
-    margin: auto;
-    width: 600px;
-    border-right: 10px;
-    border-radius: 20px;
-    transition: background 0.5s , transform 0.5s;
-    box-shadow: 0 0 6.56vh 1.97vh #48abe0
-  }
-
-  .servicesList div:hover{
-    transform: translateY(-10px);
-  }
-
-  .servicesList div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-  }
-
-  .servicesList div h2{
-    color: black;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  .servicesList div p{
-    color: black;
-    font-size: 15px;
-  }  */
-
-/* testing ends */
 
 /* About us */
 
@@ -100,8 +47,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5vh;
-  margin: 10vh auto;
+  /* padding-top: 5vh; */
+  margin: 17vh auto;
   height: 20vh;
   width: 35vw;
   padding-bottom: 2vh;
@@ -459,7 +406,7 @@ h1.title2 {
   align-items: center;
   flex-wrap: nowrap;
   gap: 19.68vh 3.375vw;
-  padding: 15vh 3.375vw;
+  /* padding: 15vh 3.375vw; */
 }
 
 .container .card {
@@ -555,6 +502,8 @@ h1.title2 {
   background: radial-gradient(ellipse at bottom, #000000 0%, #090a0f 100%);
   overflow: hidden;
 }
+
+/* this big code is for generating background live moving stars */
 
 #stars {
   width: 1px;
@@ -1146,7 +1095,7 @@ h1.title2 {
   }
 
   .desc .box {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1157,10 +1106,11 @@ h1.title2 {
   .desc .box p {
     font-size: 14.3px;
     margin: 10vh 1vh 0 1vh;
-    padding: 2vh;
+    /* padding: 2vh; */
     width: 50vh;
     border-radius: 10px;
     object-fit: cover;
+    font-weight: 400;
   }
 
   .Row section i,
@@ -1243,23 +1193,45 @@ h1.title2 {
 
   .aboutcontainer {
     width: 30vh;
-    left: -3vw;
+    /* left: -3vw; */
     position: relative;
   }
 
   .container .card {
     width: 35vw;
-    height: 45vh;
+    height: 32vh;
   }
 
   .container .card .imgBx {
     width: 32vw;
+    height: 23vh;
+  }
+
+  .container .card .content {
+    position: relative;
+    top: 26vh;
   }
 
   .container .card .content .teamHeading1,
   .container .card .content .teamHeading2 {
     font-size: 2vh;
-    padding: 0.2vh;
+    padding: 0vh;
+  }
+
+  .container .card:hover {
+    height: 45vh;
+    margin-bottom: 10vh;
+  }
+
+  .container .card:hover .imgBx {
+    top: -9.75vh;
+    scale: 0.85;
+    box-shadow: 0 1.97vh 3vw rgba(0, 0, 0, 0.2);
+  }
+
+  .container .card:hover .content {
+    top: 17vh;
+    height: 26vh;
   }
 
   .titleWords .title1 .clubHead {
@@ -1278,7 +1250,7 @@ h1.title2 {
   }
 
   .titleWords .title1 .gazing {
-    font-size: 2.3vh;
+    font-size: 1.9vh;
   }
 
   .wrapper .Row {
@@ -1291,7 +1263,10 @@ h1.title2 {
   }
 
   footer {
-    margin: 0 auto;
+    width: 100vw;
+    padding: 2vh;
+    position: relative;
+    background-color: black;
   }
 }
 
@@ -1319,6 +1294,10 @@ h1.title2 {
     font-size: 15vh;
   }
 
+  .box .titleContainer {
+    padding-top: 0;
+  }
+
   .titleWords .title1 .aboutUS {
     line-height: 8vh;
     font-size: 3vh;
@@ -1328,7 +1307,7 @@ h1.title2 {
     width: 100%;
   }
 
-  .container .card .imgBx {
+  .container .card .x {
     width: calc(100% - 2vw);
   }
 
@@ -1347,7 +1326,7 @@ h1.title2 {
   .box p {
     height: 50vh;
     width: 65vw;
-    padding: 3vh;
+    /* padding: 3vh; */
     top: 2vh;
     left: -15vw;
     font-size: 22px;
@@ -1400,6 +1379,6 @@ h1.title2 {
   }
 
   .titleWords .title1 .gazing {
-    font-size: 2.3vh;
+    font-size: 2.2vh;
   }
 }

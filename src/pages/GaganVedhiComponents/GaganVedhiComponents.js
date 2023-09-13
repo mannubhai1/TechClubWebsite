@@ -50,7 +50,7 @@ function GaganVedhiComponents() {
               </div>
             </div>
 
-            <p className="italic text-black object-contain rounded-2xl font-medium bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16 ">
+            <p className=" text-black object-contain rounded-xl font-medium bold h-[75vh] w-[45vw] overflow-auto px-10 color-white bg-white py-8 my-16 ">
               Exploring the vast expanse of the universe and uncovering its
               secrets is a thrilling experience right?, and it becomes even more
               exciting when shared with like-minded individuals. That's what
@@ -311,7 +311,9 @@ function GaganVedhiComponents() {
 
           {/* Footer */}
 
-          <footer className="bg-slate-950 text-center text-white dark:bg-neutral-300">
+          <footer
+            className={`bg-black text-center text-white ${styles.mainFooter}`}
+          >
             <div className="container md:pt-9 ">
               <div className="md:mb-9 flex justify-center">
                 <a
